@@ -224,7 +224,6 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 		<module>semanticcms-theme-documentation</module>
 		<module>semanticcms-theme-documentation-style</module>
 		<module>semanticcms-view-all</module>
-		<module>semanticcms-view-content</module>
 		<module>semanticcms-view-tree</module>
 		<module>semanticcms-view-what-links-here</module>
 	</modules>
