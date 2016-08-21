@@ -215,26 +215,11 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 	</dependencies>
 
 	<modules>
-		<module>semanticcms-core-model</module>
-		<module>semanticcms-core-servlet</module>
-		<module>semanticcms-core-style</module>
-		<module>semanticcms-core-taglib</module>
-		<module>semanticcms-dia-model</module>
-		<module>semanticcms-dia-servlet</module>
-		<module>semanticcms-dia-style</module>
-		<module>semanticcms-dia-taglib</module>
-		<module>semanticcms-dia-view</module>
-		<module>semanticcms-file-model</module>
-		<module>semanticcms-file-servlet</module>
-		<module>semanticcms-file-style</module>
-		<module>semanticcms-file-taglib</module>
-		<module>semanticcms-file-view</module>
-		<module>semanticcms-openfile-servlet</module>
-		<module>semanticcms-openfile-taglib</module>
-		<module>semanticcms-section-model</module>
-		<module>semanticcms-section-servlet</module>
-		<module>semanticcms-section-style</module>
-		<module>semanticcms-section-taglib</module>
+		<module>semanticcms-core</module>
+		<module>semanticcms-dia</module>
+		<module>semanticcms-file</module>
+		<module>semanticcms-openfile</module>
+		<module>semanticcms-section</module>
 		<module>semanticcms-sitemap-servlet</module>
 		<module>semanticcms-theme-documentation</module>
 		<module>semanticcms-theme-documentation-style</module>
