@@ -143,6 +143,10 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 						<exclude>javax:javaee-web-api</exclude>
 						<!-- Stay on JSTL 1.2.4 -->
 						<exclude>org.glassfish.web:javax.servlet.jsp.jstl</exclude>
+						<!-- Stay on D3 3.* -->
+						<exclude>org.webjars:d3js</exclude>
+						<!-- Stay on jQuery 2.* -->
+						<exclude>org.webjars:jquery</exclude>
 					</excludes>
 				</configuration>
 			</plugin>
