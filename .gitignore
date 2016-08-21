@@ -7,14 +7,3 @@ release.properties
 dependency-reduced-pom.xml
 buildNumber.properties
 .mvn/timing.properties
-semanticcms-core
-semanticcms-dia
-semanticcms-file
-semanticcms-openfile
-semanticcms-section
-semanticcms-sitemap-servlet
-semanticcms-theme-documentation-style
-semanticcms-theme-documentation
-semanticcms-view-all
-semanticcms-view-tree
-semanticcms-view-what-links-here
