@@ -31,3 +31,6 @@
 [submodule "semanticcms-view-what-links-here"]
 	path = semanticcms-view-what-links-here
 	url = git@github.com:aoindustries/semanticcms-view-what-links-here.git
+[submodule "semanticcms-autogit"]
+	path = semanticcms-autogit
+	url = git@github.com:aoindustries/semanticcms-autogit.git
