@@ -232,6 +232,7 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 	</dependencies>
 
 	<modules>
+		<module>semanticcms-autogit</module>
 		<module>semanticcms-core</module>
 		<module>semanticcms-dia</module>
 		<module>semanticcms-file</module>
