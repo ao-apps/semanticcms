@@ -34,3 +34,6 @@
 [submodule "semanticcms-autogit"]
 	path = semanticcms-autogit
 	url = git@github.com:aoindustries/semanticcms-autogit.git
+[submodule "semanticcms-pagegraph"]
+	path = semanticcms-pagegraph
+	url = git@github.com:aoindustries/semanticcms-pagegraph.git
