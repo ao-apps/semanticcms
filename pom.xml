@@ -75,7 +75,7 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 		<repository>
 			<id>java.net2</id>
 			<name>Repository hosting the jee6 artifacts</name>
-			<url>https://maven.java.net/content/groups/public/</url>
+			<url>http://download.java.net/maven/2</url>
 		</repository>
 	</repositories>
 
