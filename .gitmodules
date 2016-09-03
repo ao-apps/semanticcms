@@ -37,3 +37,6 @@
 [submodule "semanticcms-pagegraph"]
 	path = semanticcms-pagegraph
 	url = git@github.com:aoindustries/semanticcms-pagegraph.git
+[submodule "semanticcms-all"]
+	path = semanticcms-all
+	url = git@github.com:aoindustries/semanticcms-all.git
