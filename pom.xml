@@ -249,7 +249,6 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 		<module>semanticcms-openfile</module>
 		<module>semanticcms-pagegraph</module>
 		<module>semanticcms-section</module>
-		<module>semanticcms-sitemap-servlet</module>
 		<module>semanticcms-theme-documentation</module>
 		<module>semanticcms-theme-documentation-style</module>
 		<module>semanticcms-view-all</module>
