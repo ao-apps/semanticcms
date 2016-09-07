@@ -246,6 +246,7 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 		<module>semanticcms-core</module>
 		<module>semanticcms-dia</module>
 		<module>semanticcms-file</module>
+		<module>semanticcms-news</module>
 		<module>semanticcms-openfile</module>
 		<module>semanticcms-pagegraph</module>
 		<module>semanticcms-section</module>
