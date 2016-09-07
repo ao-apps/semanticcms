@@ -40,3 +40,6 @@
 [submodule "semanticcms-all"]
 	path = semanticcms-all
 	url = git@github.com:aoindustries/semanticcms-all.git
+[submodule "semanticcms-news"]
+	path = semanticcms-news
+	url = git@github.com:aoindustries/semanticcms-news.git
