@@ -34,7 +34,7 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 	<packaging>pom</packaging>
 
 	<name>SemanticCMS</name>
-	<url>https://semanticcms.com/docs/semanticcms/</url>
+	<url>https://semanticcms.com/</url>
 	<description>Parent POM for all SemanticCMS packages.</description>
 
 	<licenses>
@@ -112,6 +112,19 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 					<configuration>
 						<source>1.6</source>
 						<target>1.6</target>
+					</configuration>
+				</plugin>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-javadoc-plugin</artifactId>
+					<version>2.10.4</version>
+					<configuration>
+						<links>
+							<!-- Stay on Java EE Web API 6 -->
+							<link>https://tomcat.apache.org/tomcat-7.0-doc/servletapi/</link>
+							<link>https://tomcat.apache.org/tomcat-7.0-doc/jspapi/</link>
+							<link>https://tomcat.apache.org/tomcat-7.0-doc/elapi/</link>
+						</links>
 					</configuration>
 				</plugin>
 			</plugins>
