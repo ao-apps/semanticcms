@@ -168,6 +168,7 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 					<excludes>
 						<!-- Stay on Java EE Web API 6 -->
 						<exclude>javax.servlet:javax.servlet-api</exclude>
+						<exclude>javax.el:javax.el-api</exclude>
 						<exclude>javax.servlet.jsp:javax.servlet.jsp-api</exclude>
 						<exclude>javax.servlet:jstl</exclude>
 						<exclude>org.glassfish.web:jstl-impl</exclude>
