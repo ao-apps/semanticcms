@@ -17,7 +17,6 @@ Parent POM for all [SemanticCMS](https://semanticcms.com/) packages.
 * [SemanticCMS PageGraph](https://semanticcms.com/pagegraph/)
 * [SemanticCMS Section](https://semanticcms.com/section/)
 * [SemanticCMS Theme Documentation](https://semanticcms.com/theme-documentation/)
-* [SemanticCMS Theme Documentation Style](https://semanticcms.com/theme-documentation-style/)
 * [SemanticCMS View All](https://semanticcms.com/view-all/)
 * [SemanticCMS View Tree](https://semanticcms.com/view-tree/)
 * [SemanticCMS View What Links Here](https://semanticcms.com/view-what-links-here/)
