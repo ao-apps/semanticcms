@@ -202,7 +202,11 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 							<groupId>org.apache.maven.plugins</groupId>
 							<artifactId>maven-javadoc-plugin</artifactId>
 							<configuration>
-								<bootclasspath>${bootclasspath.jdk16}</bootclasspath>
+								<!--
+									Java 1.8 javadoc bug: https://bugs.openjdk.java.net/browse/JDK-8041628
+									Java 1.9: Set this back to jdk16.
+								-->
+								<bootclasspath>${bootclasspath.jdk18}</bootclasspath>
 							</configuration>
 						</plugin>
 					</plugins>
@@ -269,9 +273,6 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 </script>]]>
 							</bottom>
 							<detectJavaApiLink>false</detectJavaApiLink>
-							<links>
-								<link>https://docs.oracle.com/javase/6/docs/api/</link>
-							</links>
 						</configuration>
 						<executions>
 							<execution>
