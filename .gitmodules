@@ -43,3 +43,6 @@
 [submodule "semanticcms-news"]
 	path = semanticcms-news
 	url = git@github.com:aoindustries/semanticcms-news.git
+[submodule "semanticcms-google-analytics"]
+	path = semanticcms-google-analytics
+	url = git@github.com:aoindustries/semanticcms-google-analytics
