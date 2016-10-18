@@ -12,6 +12,7 @@ Parent POM for all [SemanticCMS](https://semanticcms.com/) packages.
 * [SemanticCMS Core](https://semanticcms.com/core/)
 * [SemanticCMS Dia](https://semanticcms.com/dia/)
 * [SemanticCMS File](https://semanticcms.com/file/)
+* [SemanticCMS Google Analytics](https://semanticcms.com/google-analytics/)
 * [SemanticCMS News](https://semanticcms.com/news/)
 * [SemanticCMS OpenFile](https://semanticcms.com/openfile/)
 * [SemanticCMS PageGraph](https://semanticcms.com/pagegraph/)
