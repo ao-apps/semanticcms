@@ -254,6 +254,7 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 						<artifactId>maven-javadoc-plugin</artifactId>
 						<version>2.10.4</version>
 						<configuration>
+							<!-- TODO: Here and all javadocs, support canonical URL links in generated docs -->
 							<packagesheader><![CDATA[<a target="_top" href="${project.url}">${project.name} ${project.version}</a>]]></packagesheader>
 							<header><![CDATA[<a target="_top" href="${project.url}">${project.name} ${project.version}</a>]]></header>
 							<keywords>true</keywords><!-- Help internal search systems -->
