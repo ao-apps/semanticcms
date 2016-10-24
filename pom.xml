@@ -39,7 +39,7 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 	<properties>
 		<bookPath><!-- To be set in modules --></bookPath>
 		<shortTitle><!-- To be set in modules --></shortTitle>
-		<javadoc.breadcrumbs><![CDATA[<a target="_top" href="https://semanticcms.com">SemanticCMS</a>
+		<javadoc.breadcrumbs><![CDATA[<a target="_top" href="${project.parent.url}">${project.parent.name}</a>
 / <a target="_top" href="${project.url}">${shortTitle}</a>]]></javadoc.breadcrumbs>
 		<google.analytics.trackingId>UA-8801760-44</google.analytics.trackingId>
 	</properties>
