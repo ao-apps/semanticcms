@@ -24,155 +24,47 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<prerequisites>
-		<maven>3.0.4</maven>
-	</prerequisites>
+	<parent>
+		<groupId>com.aoindustries</groupId>
+		<artifactId>ao-oss-parent</artifactId>
+		<version>1.0.0-SNAPSHOT</version>
+		<relativePath>../ao-oss-parent/pom.xml</relativePath>
+	</parent>
 
 	<groupId>com.semanticcms</groupId>
 	<artifactId>semanticcms</artifactId>
 	<version>1.5.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
+	<properties>
+		<bookPath><!-- To be set in modules --></bookPath>
+		<shortTitle><!-- To be set in modules --></shortTitle>
+		<javadoc.breadcrumbs><![CDATA[<a target="_top" href="https://semanticcms.com">SemanticCMS</a>
+/ <a target="_top" href="${project.url}">${shortTitle}</a>]]></javadoc.breadcrumbs>
+		<google.analytics.trackingId>UA-8801760-44</google.analytics.trackingId>
+	</properties>
+
 	<name>SemanticCMS</name>
-	<url>https://semanticcms.com/</url>
+	<url>https://semanticcms.com${bookPath}/</url>
 	<description>Parent POM for all SemanticCMS packages.</description>
 	<inceptionYear>2016</inceptionYear>
 
-	<licenses>
-		<license>
-			<name>GNU General Lesser Public License (LGPL) version 3.0</name>
-			<url>https://www.gnu.org/licenses/lgpl-3.0.txt</url>
-		</license>
-	</licenses>
-
-	<organization>
-		<name>AO Industries, Inc.</name>
-		<url>https://www.aoindustries.com/</url>
-	</organization>
-
-	<developers>
-		<developer>
-			<name>AO Industries, Inc.</name>
-			<email>support@aoindustries.com</email>
-			<url>https://www.aoindustries.com/</url>
-			<organization>AO Industries, Inc.</organization>
-			<organizationUrl>https://www.aoindustries.com/</organizationUrl>
-		</developer>
-	</developers>
-
 	<scm>
-		<connection>scm:git:git://github.com/aoindustries/semanticcms.git</connection>
-		<developerConnection>scm:git:git@github.com:aoindustries/semanticcms.git</developerConnection>
-		<url>https://github.com/aoindustries/semanticcms</url>
+		<!-- Can't inherit due to multi-module -->
+		<connection>scm:git:git://github.com/aoindustries/${project.artifactId}.git</connection>
+		<developerConnection>scm:git:git@github.com:aoindustries/${project.artifactId}.git</developerConnection>
+		<url>https://github.com/aoindustries/${project.artifactId}</url>
 		<tag>HEAD</tag>
 	</scm>
 
-	<repositories>
-		<repository>
-			<id>sonatype-nexus-snapshots</id>
-			<name>Sonatype Nexus Snapshots</name>
-			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
-			<releases>
-				<enabled>false</enabled>
-			</releases>
-			<snapshots>
-				<enabled>true</enabled>
-			</snapshots>
-		</repository>
-		<repository>
-			<id>java.net2</id>
-			<name>Repository hosting the jee6 artifacts</name>
-			<url>https://maven.java.net/content/groups/public/</url>
-			<releases>
-				<enabled>true</enabled>
-				<updatePolicy>never</updatePolicy>
-			</releases>
-			<snapshots>
-				<enabled>false</enabled>
-			</snapshots>
-		</repository>
-	</repositories>
-
-	<distributionManagement>
-		<snapshotRepository>
-			<id>ossrh</id>
-			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
-		</snapshotRepository>
-		<!-- Unused for Nexus plugin
-		<repository>
-			<id>ossrh</id>
-			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
-		</repository>
-		-->
-	</distributionManagement>
-
-	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-	</properties>
-
 	<build>
-		<pluginManagement>
-			<plugins>
-				<plugin>
-					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-compiler-plugin</artifactId>
-					<version>3.5.1</version>
-					<configuration>
-						<compilerArgs>
-							<arg>-Xlint</arg>
-						</compilerArgs>
-						<showDeprecation>true</showDeprecation>
-						<showWarnings>true</showWarnings>
-						<source>1.6</source>
-						<target>1.6</target>
-					</configuration>
-				</plugin>
-				<plugin>
-					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-surefire-plugin</artifactId>
-					<version>2.8.1</version><!-- 2.9 still shows some output even with printSummary=false -->
-					<configuration>
-						<printSummary>false</printSummary>
-						<redirectTestOutputToFile>true</redirectTestOutputToFile>
-					</configuration>
-				</plugin>
-			</plugins>
-		</pluginManagement>
 		<plugins>
-			<plugin>
-				<groupId>org.sonatype.plugins</groupId>
-				<artifactId>nexus-staging-maven-plugin</artifactId>
-				<version>1.6.7</version>
-				<extensions>true</extensions>
-				<configuration>
-					<serverId>ossrh</serverId>
-					<nexusUrl>https://oss.sonatype.org/</nexusUrl>
-					<autoReleaseAfterClose>true</autoReleaseAfterClose>
-				</configuration>
-			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-release-plugin</artifactId>
-				<version>2.5.3</version>
-				<configuration>
-					<autoVersionSubmodules>true</autoVersionSubmodules>
-					<useReleaseProfile>false</useReleaseProfile>
-					<releaseProfiles>release</releaseProfiles>
-					<goals>deploy<!-- Necessary with autoReleaseAfterClose=true? nexus-staging:release--></goals>
-				</configuration>
-			</plugin>
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>versions-maven-plugin</artifactId>
 				<version>2.3</version>
 				<configuration>
 					<excludes>
-						<!-- Stay on Java EE Web API 6 -->
-						<exclude>javax.servlet:javax.servlet-api</exclude>
-						<exclude>javax.el:javax.el-api</exclude>
-						<exclude>javax.servlet.jsp:javax.servlet.jsp-api</exclude>
-						<exclude>javax.servlet:jstl</exclude>
-						<exclude>org.glassfish.web:jstl-impl</exclude>
 						<!-- Stay on D3 3.* -->
 						<exclude>org.webjars:d3js</exclude>
 						<!-- Stay on jQuery 2.* -->
@@ -182,138 +74,6 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 			</plugin>
 		</plugins>
 	</build>
-
-	<profiles>
-		<!-- Add bootclasspath when profile enabled -->
-		<profile>
-			<id>bootclasspaths</id>
-			<build>
-				<pluginManagement>
-					<plugins>
-						<plugin>
-							<groupId>org.apache.maven.plugins</groupId>
-							<artifactId>maven-compiler-plugin</artifactId>
-							<configuration>
-								<compilerArguments>
-									<bootclasspath>${bootclasspath.jdk16}</bootclasspath>
-								</compilerArguments>
-							</configuration>
-						</plugin>
-						<plugin>
-							<groupId>org.apache.maven.plugins</groupId>
-							<artifactId>maven-javadoc-plugin</artifactId>
-							<configuration>
-								<!--
-									Java 1.8 javadoc bug: https://bugs.openjdk.java.net/browse/JDK-8041628
-									Java 1.9: Set this back to jdk16.
-								-->
-								<bootclasspath>${bootclasspath.jdk18}</bootclasspath>
-							</configuration>
-						</plugin>
-					</plugins>
-				</pluginManagement>
-			</build>
-		</profile>
-		<!-- Disable doclint in Java 1.8+ -->
-		<profile>
-			<id>doclint-java8-disable</id>
-			<activation>
-				<jdk>[1.8,)</jdk>
-			</activation>
-			<build>
-				<plugins>
-					<plugin>
-						<groupId>org.apache.maven.plugins</groupId>
-						<artifactId>maven-javadoc-plugin</artifactId>
-						<version>2.10.4</version>
-						<configuration>
-							<additionalparam>-Xdoclint:none</additionalparam>
-						</configuration>
-					</plugin>
-				</plugins>
-			</build>
-		</profile>
-		<profile>
-			<id>release</id>
-			<build>
-				<plugins>
-					<plugin>
-						<groupId>org.apache.maven.plugins</groupId>
-						<artifactId>maven-source-plugin</artifactId>
-						<version>3.0.1</version>
-						<executions>
-							<execution>
-								<id>attach-sources</id>
-								<goals>
-									<goal>jar-no-fork</goal>
-								</goals>
-							</execution>
-						</executions>
-					</plugin>
-					<plugin>
-						<groupId>org.apache.maven.plugins</groupId>
-						<artifactId>maven-javadoc-plugin</artifactId>
-						<version>2.10.4</version>
-						<configuration>
-							<!-- TODO: Here and all javadocs, support canonical URL links in generated docs -->
-							<packagesheader><![CDATA[<a target="_top" href="${project.url}">${project.name} ${project.version}</a>]]></packagesheader>
-							<header><![CDATA[<a target="_top" href="${project.url}">${project.name} ${project.version}</a>]]></header>
-							<keywords>true</keywords><!-- Help internal search systems -->
-							<quiet>true</quiet>
-							<docfilessubdirs>true</docfilessubdirs>
-							<bottom>
-<![CDATA[Copyright &#169; {inceptionYear}&#x2013;{currentYear} {organizationName}. All rights reserved.
-<script type="text/javascript">
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-8801760-44', 'auto');
-  ga('send', 'pageview');
-
-</script>]]>
-							</bottom>
-							<detectJavaApiLink>false</detectJavaApiLink>
-						</configuration>
-						<executions>
-							<execution>
-								<id>attach-javadocs</id>
-								<goals>
-									<goal>jar</goal>
-								</goals>
-							</execution>
-						</executions>
-					</plugin>
-					<plugin>
-						<groupId>org.apache.maven.plugins</groupId>
-						<artifactId>maven-gpg-plugin</artifactId>
-						<version>1.6</version>
-						<executions>
-							<execution>
-								<id>sign-artifacts</id>
-								<phase>verify</phase>
-								<goals>
-									<goal>sign</goal>
-								</goals>
-							</execution>
-						</executions>
-					</plugin>
-				</plugins>
-			</build>
-		</profile>
-	</profiles>
-
-	<dependencyManagement>
-		<dependencies>
-			<dependency>
-				<groupId>junit</groupId>
-				<artifactId>junit</artifactId>
-				<version>4.12</version>
-				<scope>test</scope>
-			</dependency>
-		</dependencies>
-	</dependencyManagement>
 
 	<modules>
 		<module>semanticcms-all</module>
