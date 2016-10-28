@@ -46,3 +46,6 @@
 [submodule "semanticcms-google-analytics"]
 	path = semanticcms-google-analytics
 	url = git@github.com:aoindustries/semanticcms-google-analytics
+[submodule "changelog-taglib"]
+	path = changelog-taglib
+	url = git@github.com:aoindustries/semanticcms-changelog-taglib

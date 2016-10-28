@@ -78,6 +78,7 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 	<modules>
 		<module>semanticcms-all</module>
 		<module>semanticcms-autogit</module>
+		<module>changelog-taglib</module>
 		<module>semanticcms-core</module>
 		<module>semanticcms-dia</module>
 		<module>semanticcms-file</module>
