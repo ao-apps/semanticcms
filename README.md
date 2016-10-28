@@ -10,6 +10,7 @@ Parent POM for all [SemanticCMS](https://semanticcms.com/) packages.
 ## Modules
 * [SemanticCMS All](https://semanticcms.com/all/)
 * [SemanticCMS AutoGit](https://semanticcms.com/autogit/)
+* [SemanticCMS Changelog Taglib](https://semanticcms.com/changelog-taglib/)
 * [SemanticCMS Core](https://semanticcms.com/core/)
 * [SemanticCMS Dia](https://semanticcms.com/dia/)
 * [SemanticCMS File](https://semanticcms.com/file/)
