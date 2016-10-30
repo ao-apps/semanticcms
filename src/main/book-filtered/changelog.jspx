@@ -124,7 +124,7 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 		>
 			<ul>
 				<li>Improved Maven configuration for Java EE 6 dependencies.</li>
-				<li>Adding "all" packages for convenience.</li>
+				<li>Added "all" packages for convenience.</li>
 			</ul>
 		</changelog:release>
 
