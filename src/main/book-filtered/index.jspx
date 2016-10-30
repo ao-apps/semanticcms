@@ -37,7 +37,7 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 		<core:child page="changelog.jspx" />
 		<core:child book="/all" page="/index.jspx" />
 		<core:child book="/autogit" page="/index.jspx" />
-		<core:child book="/changelog-taglib" page="/index.jspx" />
+		<core:child book="/changelog/taglib" page="/index.jspx" />
 		<core:child book="/core" page="/index.jspx" />
 		<core:child book="/dia" page="/index.jspx" />
 		<core:child book="/file" page="/index.jspx" />
@@ -65,7 +65,7 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 			<ul>
 				<li><core:link book="/all" page="/index.jspx" /></li>
 				<li><core:link book="/autogit" page="/index.jspx" /></li>
-				<li><core:link book="/changelog-taglib" page="/index.jspx" /></li>
+				<li><core:link book="/changelog/taglib" page="/index.jspx" /></li>
 				<li><core:link book="/core" page="/index.jspx" /></li>
 				<li><core:link book="/dia" page="/index.jspx" /></li>
 				<li><core:link book="/file" page="/index.jspx" /></li>
