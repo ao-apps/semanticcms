@@ -76,21 +76,21 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 	</build>
 
 	<modules>
-		<module>semanticcms-all</module>
-		<module>semanticcms-autogit</module>
+		<module>all</module>
+		<module>autogit</module>
 		<module>changelog-taglib</module>
-		<module>semanticcms-core</module>
-		<module>semanticcms-dia</module>
-		<module>semanticcms-file</module>
-		<module>semanticcms-google-analytics</module>
-		<module>semanticcms-news</module>
-		<module>semanticcms-openfile</module>
-		<module>semanticcms-pagegraph</module>
-		<module>semanticcms-section</module>
-		<module>semanticcms-theme-documentation</module>
-		<module>semanticcms-theme-documentation-style</module>
-		<module>semanticcms-view-all</module>
-		<module>semanticcms-view-tree</module>
-		<module>semanticcms-view-what-links-here</module>
+		<module>core</module>
+		<module>dia</module>
+		<module>file</module>
+		<module>google-analytics</module>
+		<module>news</module>
+		<module>openfile</module>
+		<module>pagegraph</module>
+		<module>section</module>
+		<module>theme-documentation</module>
+		<module>theme-documentation-style</module>
+		<module>view-all</module>
+		<module>view-tree</module>
+		<module>view-what-links-here</module>
 	</modules>
 </project>

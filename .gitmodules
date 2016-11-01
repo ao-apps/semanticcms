@@ -49,3 +49,48 @@
 [submodule "changelog-taglib"]
 	path = changelog-taglib
 	url = git@github.com:aoindustries/semanticcms-changelog-taglib
+[submodule "all"]
+	path = all
+	url = git@github.com:aoindustries/semanticcms-all.git
+[submodule "autogit"]
+	path = autogit
+	url = git@github.com:aoindustries/semanticcms-autogit.git
+[submodule "core"]
+	path = core
+	url = git@github.com:aoindustries/semanticcms-core.git
+[submodule "dia"]
+	path = dia
+	url = git@github.com:aoindustries/semanticcms-dia.git
+[submodule "file"]
+	path = file
+	url = git@github.com:aoindustries/semanticcms-file.git
+[submodule "google-analytics"]
+	path = google-analytics
+	url = git@github.com:aoindustries/semanticcms-google-analytics.git
+[submodule "news"]
+	path = news
+	url = git@github.com:aoindustries/semanticcms-news.git
+[submodule "openfile"]
+	path = openfile
+	url = git@github.com:aoindustries/semanticcms-openfile.git
+[submodule "pagegraph"]
+	path = pagegraph
+	url = git@github.com:aoindustries/semanticcms-pagegraph.git
+[submodule "section"]
+	path = section
+	url = git@github.com:aoindustries/semanticcms-section.git
+[submodule "theme-documentation"]
+	path = theme-documentation
+	url = git@github.com:aoindustries/semanticcms-theme-documentation.git
+[submodule "theme-documentation-style"]
+	path = theme-documentation-style
+	url = git@github.com:aoindustries/semanticcms-theme-documentation-style.git
+[submodule "view-all"]
+	path = view-all
+	url = git@github.com:aoindustries/semanticcms-view-all.git
+[submodule "view-tree"]
+	path = view-tree
+	url = git@github.com:aoindustries/semanticcms-view-tree.git
+[submodule "view-what-links-here"]
+	path = view-what-links-here
+	url = git@github.com:aoindustries/semanticcms-view-what-links-here.git
