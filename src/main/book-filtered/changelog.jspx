@@ -47,7 +47,7 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 				scmUrl="@{project.scm.url}"
 			>
 				<ul>
-					<li>New <ao:a href="https://www.aoindustries.com/ao-oss-parent/">AO OSS Parent</ao:a> POM to simplify <code>pom.xml</code> files.</li>
+					<li>New <ao:a href="https://aoindustries.com/ao-oss-parent/">AO OSS Parent</ao:a> POM to simplify <code>pom.xml</code> files.</li>
 					<li>Project documentation moved to per-project book in <core:link page="/index.jspx" /> format.</li>
 					<li>Added changelog as top-level project link.</li>
 				</ul>
