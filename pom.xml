@@ -41,7 +41,7 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 		<shortTitle><!-- To be set in modules --></shortTitle>
 		<javadoc.breadcrumbs><![CDATA[<a target="_top" href="${project.parent.url}">${project.parent.name}</a>
 / <a target="_top" href="${project.url}">${shortTitle}</a>]]></javadoc.breadcrumbs>
-		<google.analytics.trackingId>UA-8801760-44</google.analytics.trackingId>
+		<google.analytics.trackingId>UA-86870445-1</google.analytics.trackingId>
 	</properties>
 
 	<name>SemanticCMS</name>
