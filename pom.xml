@@ -87,6 +87,8 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 		<module>openfile</module>
 		<module>pagegraph</module>
 		<module>section</module>
+		<module>tag-reference</module>
+		<module>tag-reference/book</module>
 		<module>theme-documentation</module>
 		<module>theme-documentation-style</module>
 		<module>view-all</module>

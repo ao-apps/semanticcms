@@ -32,7 +32,7 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 		title="@{project.name}"
 		description="@{project.description}"
 		datePublished="2016-10-18T19:00:00-0500"
-		dateModified="2016-10-28T00:11:09-0500"
+		dateModified="2016-11-06T02:48:55-0600"
 	>
 		<core:child page="changelog.jspx" />
 		<core:child book="/all" page="/index.jspx" />
@@ -46,6 +46,7 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 		<core:child book="/openfile" page="/index.jspx" />
 		<core:child book="/pagegraph" page="/index.jspx" />
 		<core:child book="/section" page="/index.jspx" />
+		<core:child book="/tag-reference" page="/index.jspx" />
 		<core:child book="/theme-documentation" page="/index.jspx" />
 		<core:child book="/view-all" page="/index.jspx" />
 		<core:child book="/view-tree" page="/index.jspx" />
@@ -74,6 +75,7 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 				<li><core:link book="/openfile" page="/index.jspx" /></li>
 				<li><core:link book="/pagegraph" page="/index.jspx" /></li>
 				<li><core:link book="/section" page="/index.jspx" /></li>
+				<li><core:link book="/tag-reference" page="/index.jspx" /></li>
 				<li><core:link book="/theme-documentation" page="/index.jspx" /></li>
 				<li><core:link book="/view-all" page="/index.jspx" /></li>
 				<li><core:link book="/view-tree" page="/index.jspx" /></li>

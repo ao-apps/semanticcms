@@ -35,7 +35,7 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 		title="@{project.name} Changelog"
 		shortTitle="Changelog"
 		tocLevels="1"
-		datePublished="2016-10-30T02:44:20-0500"
+		datePublished="2016-11-06T02:50:50-0600"
 	>
 		<!-- The current snapshot, unreleased version -->
 		<c:if test="${fn:endsWith('@{project.version}', '-SNAPSHOT')}">
@@ -49,7 +49,9 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 				<ul>
 					<li>New <ao:a href="https://aoindustries.com/ao-oss-parent/">AO OSS Parent</ao:a> POM to simplify <code>pom.xml</code> files.</li>
 					<li>Project documentation moved to per-project book in <core:link page="/index.jspx" /> format.</li>
+					<li>New <core:link book="/changelog/taglib" page="/index.jspx" /> module.</li>
 					<li>Added changelog as top-level project link.</li>
+					<li>New <core:link book="/tag-reference" page="/index.jspx" /> module.</li>
 				</ul>
 			</changelog:release>
 		</c:if>

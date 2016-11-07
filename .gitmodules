@@ -94,3 +94,6 @@
 [submodule "view-what-links-here"]
 	path = view-what-links-here
 	url = git@github.com:aoindustries/semanticcms-view-what-links-here.git
+[submodule "tag-reference"]
+	path = tag-reference
+	url = git@github.com:aoindustries/semanticcms-tag-reference
