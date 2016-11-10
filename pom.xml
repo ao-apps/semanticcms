@@ -37,7 +37,6 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 	<packaging>pom</packaging>
 
 	<properties>
-		<bookPath><!-- To be set in modules --></bookPath>
 		<shortTitle><!-- To be set in modules --></shortTitle>
 		<javadoc.breadcrumbs><![CDATA[<a target="_top" href="${project.parent.url}">${project.parent.name}</a>
 / <a target="_top" href="${project.url}">${shortTitle}</a>]]></javadoc.breadcrumbs>
@@ -45,7 +44,7 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 	</properties>
 
 	<name>SemanticCMS</name>
-	<url>https://semanticcms.com${bookPath}/</url>
+	<url>https://semanticcms.com/</url>
 	<description>Parent POM for all SemanticCMS packages.</description>
 	<inceptionYear>2016</inceptionYear>
 
@@ -76,23 +75,33 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 	</build>
 
 	<modules>
+		<module>book</module>
 		<module>all</module>
+		<module>all/book</module>
 		<module>autogit</module>
 		<module>changelog-taglib</module>
+		<module>changelog-taglib/book</module>
 		<module>core</module>
 		<module>dia</module>
 		<module>file</module>
 		<module>google-analytics</module>
+		<module>google-analytics/book</module>
 		<module>news</module>
 		<module>openfile</module>
 		<module>pagegraph</module>
+		<module>pagegraph/book</module>
 		<module>section</module>
 		<module>tag-reference</module>
 		<module>tag-reference/book</module>
 		<module>theme-documentation</module>
+		<module>theme-documentation/book</module>
 		<module>theme-documentation-style</module>
+		<module>theme-documentation-style/book</module>
 		<module>view-all</module>
+		<module>view-all/book</module>
 		<module>view-tree</module>
+		<module>view-tree/book</module>
 		<module>view-what-links-here</module>
+		<module>view-what-links-here/book</module>
 	</modules>
 </project>
