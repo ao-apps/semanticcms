@@ -1,5 +1,5 @@
 # [<img src="ao-logo.png" alt="AO Logo" width="35" height="40">](https://aoindustries.com/) [SemanticCMS](https://semanticcms.com/)
-Parent POM for all [SemanticCMS](https://semanticcms.com/) packages.
+Aggregator POM for all [SemanticCMS](https://semanticcms.com/) packages.
 
 ## Project Links
 * [Project Home](https://semanticcms.com/)
@@ -18,6 +18,7 @@ Parent POM for all [SemanticCMS](https://semanticcms.com/) packages.
 * [SemanticCMS News](https://semanticcms.com/news/)
 * [SemanticCMS OpenFile](https://semanticcms.com/openfile/)
 * [SemanticCMS PageGraph](https://semanticcms.com/pagegraph/)
+* [SemanticCMS Parent](https://semanticcms.com/parent/)
 * [SemanticCMS Section](https://semanticcms.com/section/)
 * [SemanticCMS Tag Reference](https://semanticcms.com/tag-reference/)
 * [SemanticCMS Theme Documentation](https://semanticcms.com/theme-documentation/)

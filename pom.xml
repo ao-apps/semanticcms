@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-semanticcms - Parent POM for all SemanticCMS packages.
+semanticcms - Aggregator POM for all SemanticCMS packages.
 Copyright (C) 2016  AO Industries, Inc.
     support@aoindustries.com
     7262 Bull Pen Cir
@@ -25,10 +25,10 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
-		<groupId>com.aoindustries</groupId>
-		<artifactId>ao-oss-parent</artifactId>
+		<groupId>com.semanticcms</groupId>
+		<artifactId>semanticcms-parent</artifactId>
 		<version>1.0.0-SNAPSHOT</version>
-		<relativePath>../ao-oss-parent/pom.xml</relativePath>
+		<relativePath>parent/pom.xml</relativePath>
 	</parent>
 
 	<groupId>com.semanticcms</groupId>
@@ -36,16 +36,9 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 	<version>1.5.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
-	<properties>
-		<shortTitle><!-- To be set in modules --></shortTitle>
-		<javadoc.breadcrumbs><![CDATA[<a target="_top" href="${project.parent.url}">${project.parent.name}</a>
-/ <a target="_top" href="${project.url}">${shortTitle}</a>]]></javadoc.breadcrumbs>
-		<google.analytics.trackingId>UA-86870445-1</google.analytics.trackingId>
-	</properties>
-
 	<name>SemanticCMS</name>
 	<url>https://semanticcms.com/</url>
-	<description>Parent POM for all SemanticCMS packages.</description>
+	<description>Aggregator POM for all SemanticCMS packages.</description>
 	<inceptionYear>2016</inceptionYear>
 
 	<scm>
@@ -55,24 +48,6 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 		<url>https://github.com/aoindustries/${project.artifactId}</url>
 		<tag>HEAD</tag>
 	</scm>
-
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.codehaus.mojo</groupId>
-				<artifactId>versions-maven-plugin</artifactId>
-				<version>2.3</version>
-				<configuration>
-					<excludes>
-						<!-- Stay on D3 3.* -->
-						<exclude>org.webjars:d3js</exclude>
-						<!-- Stay on jQuery 2.* -->
-						<exclude>org.webjars:jquery</exclude>
-					</excludes>
-				</configuration>
-			</plugin>
-		</plugins>
-	</build>
 
 	<modules>
 		<module>book</module>
@@ -90,6 +65,8 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 		<module>openfile</module>
 		<module>pagegraph</module>
 		<module>pagegraph/book</module>
+		<module>parent</module>
+		<module>parent/book</module>
 		<module>section</module>
 		<module>tag-reference</module>
 		<module>tag-reference/book</module>

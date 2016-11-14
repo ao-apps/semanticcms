@@ -97,3 +97,6 @@
 [submodule "tag-reference"]
 	path = tag-reference
 	url = git@github.com:aoindustries/semanticcms-tag-reference
+[submodule "parent"]
+	path = parent
+	url = git@github.com:aoindustries/semanticcms-parent
