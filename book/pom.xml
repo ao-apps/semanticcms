@@ -33,7 +33,7 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 
 	<groupId>com.semanticcms</groupId>
 	<artifactId>semanticcms-book</artifactId>
-	<version>1.5.1-SNAPSHOT</version>
+	<version>1.5.1</version>
 	<packaging>jar</packaging>
 
 	<properties>
@@ -41,7 +41,7 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 		<documented.groupId>com.semanticcms</documented.groupId>
 		<documented.artifactId>semanticcms</documented.artifactId>
 		<documented.name>SemanticCMS</documented.name>
-		<documented.shortTitle></documented.shortTitle>
+		<documented.shortTitle />
 		<documented.url>https://semanticcms.com/</documented.url>
 		<documented.description>Aggregator POM for all SemanticCMS packages.</documented.description>
 		<documented.inceptionYear>2016</documented.inceptionYear>
@@ -60,7 +60,7 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 		<connection>scm:git:git://github.com/aoindustries/${documented.artifactId}.git</connection>
 		<developerConnection>scm:git:git@github.com:aoindustries/${documented.artifactId}.git</developerConnection>
 		<url>${documented.scm.url}</url>
-		<tag>HEAD</tag>
+		<tag>semanticcms-book-1.5.1</tag>
 	</scm>
 
 	<dependencies>
