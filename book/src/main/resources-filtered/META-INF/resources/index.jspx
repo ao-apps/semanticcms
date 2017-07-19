@@ -1,6 +1,6 @@
 <!--
 semanticcms - Aggregator POM for all SemanticCMS packages.
-Copyright (C) 2016  AO Industries, Inc.
+Copyright (C) 2016, 2017  AO Industries, Inc.
     support@aoindustries.com
     7262 Bull Pen Cir
     Mobile, AL 36695
@@ -32,7 +32,7 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 		title="@{documented.name}"
 		description="@{documented.description}"
 		datePublished="2016-10-18T19:00:00-0500"
-		dateModified="2016-11-13T23:56:09-0600"
+		dateModified="2017-07-18T20:35:30-0500"
 	>
 		<core:child page="changelog.jspx" />
 		<core:child book="/all" page="/index.jspx" />
@@ -52,6 +52,14 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 		<core:child book="/view-all" page="/index.jspx" />
 		<core:child book="/view-tree" page="/index.jspx" />
 		<core:child book="/view-what-links-here" page="/index.jspx" />
+		<ao:include
+			page="/ao-badges/badges.inc.jspx"
+			arg.projectStatus="${currentPage.property.projectStatus}"
+			arg.managementStatus="${currentPage.property.managementStatus}"
+			arg.packagingStatus="${currentPage.property.packagingStatus}"
+			arg.semanticVersioning="${currentPage.property.semanticVersioning}"
+			arg.license="${currentPage.property.license}"
+		/>
 		<p>
 			Aggregator POM for all <core:link page="index.jspx" /> packages.
 		</p>
