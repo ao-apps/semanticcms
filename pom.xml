@@ -80,5 +80,6 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 		<module>view-tree/book</module>
 		<module>view-what-links-here</module>
 		<module>view-what-links-here/book</module>
+		<module>website</module>
 	</modules>
 </project>

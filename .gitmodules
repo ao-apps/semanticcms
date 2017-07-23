@@ -52,3 +52,6 @@
 [submodule "parent"]
 	path = parent
 	url = git@github.com:aoindustries/semanticcms-parent
+[submodule "website"]
+	path = website
+	url = git@github.com:aoindustries/semanticcms-website
