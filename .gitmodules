@@ -55,3 +55,6 @@
 [submodule "website"]
 	path = website
 	url = git@github.com:aoindustries/semanticcms-website
+[submodule "resources"]
+	path = resources
+	url = git@github.com:aoindustries/semanticcms-resources.git

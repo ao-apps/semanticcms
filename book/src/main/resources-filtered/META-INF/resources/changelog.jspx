@@ -37,7 +37,7 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 		shortTitle="Changelog"
 		tocLevels="1"
 		datePublished="2016-11-06T02:50:50-0600"
-		dateModified="2017-07-31T15:59:53-0500"
+		dateModified="2017-08-04T14:52:12-0500"
 	>
 		<!-- The current snapshot, unreleased version -->
 		<c:set var="version" value="@{com.semanticcms:semanticcms:pom.version}" />
@@ -55,6 +55,7 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 			>
 				<ul>
 					<li>Now on SemanticCMS 2.</li>
+					<li>New module <core:link book="/repository" page="/index.jspx" />.</li>
 				</ul>
 			</changelog:release>
 		</c:if>

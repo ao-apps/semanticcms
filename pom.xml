@@ -67,6 +67,7 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 		<module>pagegraph/book</module>
 		<module>parent</module>
 		<module>parent/book</module>
+		<module>resources</module>
 		<module>section</module>
 		<module>tag-reference</module>
 		<module>tag-reference/book</module>
