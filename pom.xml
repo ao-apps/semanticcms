@@ -65,6 +65,7 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 		<module>openfile</module>
 		<module>pagegraph</module>
 		<module>pagegraph/book</module>
+		<module>pages</module>
 		<module>parent</module>
 		<module>parent/book</module>
 		<module>resources</module>

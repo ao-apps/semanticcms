@@ -37,6 +37,7 @@ Aggregator POM for all [SemanticCMS](https://semanticcms.com/) packages.
 * [SemanticCMS News](https://semanticcms.com/news/)
 * [SemanticCMS OpenFile](https://semanticcms.com/openfile/)
 * [SemanticCMS PageGraph](https://semanticcms.com/pagegraph/)
+* [SemanticCMS Pages](https://semanticcms.com/pages/)
 * [SemanticCMS Parent](https://semanticcms.com/parent/)
 * [SemanticCMS Resources](https://semanticcms.com/resources/)
 * [SemanticCMS Section](https://semanticcms.com/section/)
