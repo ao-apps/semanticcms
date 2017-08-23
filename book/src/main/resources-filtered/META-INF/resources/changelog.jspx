@@ -55,8 +55,8 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 			>
 				<ul>
 					<li>Now on SemanticCMS 2.</li>
-					<li>New module <core:link book="/pages" page="/index.jspx" />.</li>
-					<li>New module <core:link book="/repository" page="/index.jspx" />.</li>
+					<li>New module <core:link book="/pages" page="/" />.</li>
+					<li>New module <core:link book="/repository" page="/" />.</li>
 				</ul>
 			</changelog:release>
 		</c:if>
@@ -84,10 +84,10 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 		>
 			<ul>
 				<li>New <ao:a href="https://aoindustries.com/ao-oss-parent/">AO OSS Parent</ao:a> POM to simplify <code>pom.xml</code> files.</li>
-				<li>Project documentation moved to per-project book in <core:link page="/index.jspx" /> format.</li>
-				<li>New <core:link book="/changelog/taglib" page="/index.jspx" /> module.</li>
+				<li>Project documentation moved to per-project book in <core:link page="/" /> format.</li>
+				<li>New <core:link book="/changelog/taglib" page="/" /> module.</li>
 				<li>Added changelog as top-level project link.</li>
-				<li>New <core:link book="/tag-reference" page="/index.jspx" /> module.</li>
+				<li>New <core:link book="/tag-reference" page="/" /> module.</li>
 			</ul>
 		</changelog:release>
 
@@ -188,7 +188,7 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 			scmUrl="@{documented.scm.url}"
 		>
 			<ul>
-				<li>New parent POM for all <core:link page="/index.jspx" /> components.</li>
+				<li>New parent POM for all <core:link page="/" /> components.</li>
 				<li>Using Git submodules on a per-module basis.</li>
 				<li>semanticcms-view-content renamed to semanticcms-core-view-content and moved to core.</li>
 			</ul>
