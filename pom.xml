@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 semanticcms - Aggregator POM for all SemanticCMS packages.
-Copyright (C) 2016, 2017  AO Industries, Inc.
+Copyright (C) 2016, 2017, 2019  AO Industries, Inc.
     support@aoindustries.com
     7262 Bull Pen Cir
     Mobile, AL 36695
@@ -36,7 +36,7 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 	<version>1.5.3-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
-	<name>SemanticCMS</name>
+	<name>SemanticCMS 1</name>
 	<url>https://semanticcms.com/</url>
 	<description>Aggregator POM for all SemanticCMS packages.</description>
 	<inceptionYear>2016</inceptionYear>
