@@ -1,4 +1,4 @@
-# [<img src="ao-logo.png" alt="AO Logo" width="35" height="40">](https://aoindustries.com/) [SemanticCMS](https://semanticcms.com/)
+# [<img src="ao-logo.png" alt="AO Logo" width="35" height="40">](https://github.com/aoindustries) [SemanticCMS](https://github.com/aoindustries/semanticcms)
 <p>
 	<a href="https://aoindustries.com/life-cycle#project-current-stable">
 		<img src="https://semanticcms.com/ao-badges/project-current-stable.svg" alt="project: current stable" />
@@ -18,7 +18,7 @@
 	</a>
 </p>
 
-Aggregator POM for all [SemanticCMS](https://semanticcms.com/) packages.
+Aggregator POM for all [SemanticCMS](https://github.com/aoindustries/semanticcms) packages.
 
 ## Project Links
 * [Project Home](https://semanticcms.com/)
@@ -27,23 +27,23 @@ Aggregator POM for all [SemanticCMS](https://semanticcms.com/) packages.
 * [GitHub](https://github.com/aoindustries/semanticcms)
 
 ## Modules
-* [SemanticCMS All](https://semanticcms.com/all/)
-* [SemanticCMS AutoGit](https://semanticcms.com/autogit/)
-* [SemanticCMS Changelog Taglib](https://semanticcms.com/changelog/taglib/)
-* [SemanticCMS Core](https://semanticcms.com/core/)
-* [SemanticCMS Dia](https://semanticcms.com/dia/)
-* [SemanticCMS File](https://semanticcms.com/file/)
-* [SemanticCMS Google Analytics](https://semanticcms.com/google-analytics/)
-* [SemanticCMS News](https://semanticcms.com/news/)
-* [SemanticCMS OpenFile](https://semanticcms.com/openfile/)
-* [SemanticCMS PageGraph](https://semanticcms.com/pagegraph/)
-* [SemanticCMS Parent](https://semanticcms.com/parent/)
-* [SemanticCMS Section](https://semanticcms.com/section/)
-* [SemanticCMS Tag Reference](https://semanticcms.com/tag-reference/)
-* [SemanticCMS Theme Documentation](https://semanticcms.com/theme-documentation/)
-* [SemanticCMS View All](https://semanticcms.com/view-all/)
-* [SemanticCMS View Tree](https://semanticcms.com/view-tree/)
-* [SemanticCMS View What Links Here](https://semanticcms.com/view-what-links-here/)
+* [SemanticCMS All](https://github.com/aoindustries/semanticcms-all)
+* [SemanticCMS AutoGit](https://github.com/aoindustries/semanticcms-autogit)
+* [SemanticCMS Changelog Taglib](https://github.com/aoindustries/semanticcms-changelog-taglib)
+* [SemanticCMS Core](https://github.com/aoindustries/semanticcms-core)
+* [SemanticCMS Dia](https://github.com/aoindustries/semanticcms-dia)
+* [SemanticCMS File](https://github.com/aoindustries/semanticcms-file)
+* [SemanticCMS Google Analytics](https://github.com/aoindustries/semanticcms-google-analytics)
+* [SemanticCMS News](https://github.com/aoindustries/semanticcms-news)
+* [SemanticCMS OpenFile](https://github.com/aoindustries/semanticcms-openfile)
+* [SemanticCMS PageGraph](https://github.com/aoindustries/semanticcms-pagegraph)
+* [SemanticCMS Parent](https://github.com/aoindustries/semanticcms-parent)
+* [SemanticCMS Section](https://github.com/aoindustries/semanticcms-section)
+* [SemanticCMS Tag Reference](https://github.com/aoindustries/semanticcms-tag-reference)
+* [SemanticCMS Theme Documentation](https://github.com/aoindustries/semanticcms-theme-documentation)
+* [SemanticCMS View All](https://github.com/aoindustries/semanticcms-view-all)
+* [SemanticCMS View Tree](https://github.com/aoindustries/semanticcms-view-tree)
+* [SemanticCMS View What Links Here](https://github.com/aoindustries/semanticcms-view-what-links-here)
 
 ## Contact Us
 For questions or support, please [contact us](https://aoindustries.com/contact):
