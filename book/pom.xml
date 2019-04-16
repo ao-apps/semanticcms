@@ -35,7 +35,7 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 	<properties>
 		<!-- These values are copied from the project being documented -->
 		<documented.groupId>com.semanticcms</documented.groupId><documented.artifactId>semanticcms</documented.artifactId>
-		<documented.name>SemanticCMS 1</documented.name>
+		<documented.name>SemanticCMS</documented.name>
 		<documented.shortTitle />
 		<documented.url>https://semanticcms.com/</documented.url>
 		<documented.description>Aggregator POM for all SemanticCMS packages.</documented.description>

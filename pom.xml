@@ -32,7 +32,7 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 	<groupId>com.semanticcms</groupId><artifactId>semanticcms</artifactId><version>1.5.3-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
-	<name>SemanticCMS 1</name>
+	<name>SemanticCMS</name>
 	<url>https://semanticcms.com/</url>
 	<description>Aggregator POM for all SemanticCMS packages.</description>
 	<inceptionYear>2016</inceptionYear>
