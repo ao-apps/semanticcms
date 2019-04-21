@@ -37,7 +37,7 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 		shortTitle="Changelog"
 		tocLevels="1"
 		datePublished="2016-11-06T02:50:50-0600"
-		dateModified="2019-04-20T21:17:33-0500"
+		dateModified="2019-04-21T06:47:21-0500"
 	>
 		<!-- The current snapshot, unreleased version -->
 		<c:set var="version" value="@{com.semanticcms:semanticcms:pom.version}" />
@@ -52,13 +52,21 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 				groupId="@{documented.groupId}"
 				artifactId="@{documented.artifactId}"
 				scmUrl="@{documented.scm.url}"
-			>
-				<ul>
-					<li>Minimum Java version changed from 1.6 to 1.7.</li>
-					<li>Updated dependencies.</li>
-				</ul>
-			</changelog:release>
+			/>
 		</c:if>
+
+		<changelog:release
+			projectName="@{documented.name}"
+			version="1.6.0"
+			datePublished="2019-04-21T06:47:21-0500"
+			groupId="@{documented.groupId}"
+			artifactId="@{documented.artifactId}"
+			scmUrl="@{documented.scm.url}"
+		>
+			<ul>
+				<li>Updated version of <ao:a href="https://semanticcms.com/parent/">SemanticCMS Parent</ao:a>.</li>
+			</ul>
+		</changelog:release>
 
 		<changelog:release
 			projectName="@{documented.name}"
