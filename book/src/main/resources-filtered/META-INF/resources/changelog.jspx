@@ -64,7 +64,7 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 			scmUrl="@{documented.scm.url}"
 		>
 			<ul>
-				<li>Updated version of <p:link book="/parent" page="/index.jspx" />.</li>
+				<li>Updated version of <core:link book="/parent" page="/index.jspx" />.</li>
 			</ul>
 		</changelog:release>
 
