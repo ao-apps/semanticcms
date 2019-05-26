@@ -45,6 +45,11 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 			test="${!fn:startsWith(version, '@')}"
 			message="Version not substituted: #{version}"
 		/>
+		<!-- TODO: Create a new module for icons:
+			https://stackoverflow.com/questions/2997437/what-size-should-apple-touch-icon-png-be-for-ipad-and-iphone, 
+			https://realfavicongenerator.net/blog/apple-touch-icon-the-good-the-bad-the-ugly/
+			https://realfavicongenerator.net/blog/android-8-oreo-process-home-screen-icon/
+		-->
 		<c:if test="${fn:endsWith(version, '-SNAPSHOT') and !fn:endsWith(version, '-validation-SNAPSHOT')}">
 			<changelog:release
 				projectName="@{documented.name}"
