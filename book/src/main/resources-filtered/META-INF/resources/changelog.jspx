@@ -58,11 +58,11 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 				artifactId="@{documented.artifactId}"
 				scmUrl="@{documented.scm.url}"
 			>
-				<!-- TODO:
 				<ul>
+					<!-- TODO:
 					<li>TODO: New project <core:link book="/bom" page="/index.jspx" /> for managed dependencies.</li>
+					-->
 				</ul>
-				-->
 			</changelog:release>
 		</c:if>
 
