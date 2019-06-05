@@ -37,7 +37,7 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 		shortTitle="Changelog"
 		tocLevels="1"
 		datePublished="2016-11-06T02:50:50-0600"
-		dateModified="2019-04-21T06:47:21-0500"
+		dateModified="2019-06-04T15:14:50-0500"
 	>
 		<!-- The current snapshot, unreleased version -->
 		<c:set var="version" value="@{com.semanticcms:semanticcms:pom.version}" />
@@ -57,7 +57,13 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 				groupId="@{documented.groupId}"
 				artifactId="@{documented.artifactId}"
 				scmUrl="@{documented.scm.url}"
-			/>
+			>
+				<!-- TODO:
+				<ul>
+					<li>TODO: New project <core:link book="/bom" page="/index.jspx" /> for managed dependencies.</li>
+				</ul>
+				-->
+			</changelog:release>
 		</c:if>
 
 		<changelog:release
