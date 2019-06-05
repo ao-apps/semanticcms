@@ -37,7 +37,7 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 		shortTitle="Changelog"
 		tocLevels="1"
 		datePublished="2016-11-06T02:50:50-0600"
-		dateModified="2017-08-19T19:31:43-0500"
+		dateModified="2019-06-04T15:14:50-0500"
 	>
 		<!-- The current snapshot, unreleased version -->
 		<c:set var="version" value="@{com.semanticcms:semanticcms:pom.version}" />
@@ -62,9 +62,25 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 					<li>Now on SemanticCMS 2.</li>
 					<li>New module <core:link book="/pages" page="/" />.</li>
 					<li>New module <core:link book="/repository" page="/" />.</li>
+					<!-- TODO:
+					<li>TODO: New project <core:link book="/bom" page="/index.jspx" /> for managed dependencies.</li>
+					-->
 				</ul>
 			</changelog:release>
 		</c:if>
+
+		<changelog:release
+			projectName="@{documented.name}"
+			version="1.6.0"
+			datePublished="2019-04-21T06:47:21-0500"
+			groupId="@{documented.groupId}"
+			artifactId="@{documented.artifactId}"
+			scmUrl="@{documented.scm.url}"
+		>
+			<ul>
+				<li>Updated version of <core:link book="/parent" page="/" />.</li>
+			</ul>
+		</changelog:release>
 
 		<changelog:release
 			projectName="@{documented.name}"

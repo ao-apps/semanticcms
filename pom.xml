@@ -32,7 +32,7 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 	<groupId>com.semanticcms</groupId><artifactId>semanticcms</artifactId><version>2.0.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
-	<name>SemanticCMS 2</name>
+	<name>SemanticCMS²</name>
 	<url>https://semanticcms.com/</url>
 	<description>Aggregator POM for all SemanticCMS packages.</description>
 	<inceptionYear>2016</inceptionYear>
@@ -47,6 +47,10 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 
 	<modules>
 		<module>book</module>
+		<!-- TODO:
+		<module>bom</module>
+		<module>bom/book</module>
+		-->
 		<module>all</module>
 		<module>all/book</module>
 		<module>autogit</module>
