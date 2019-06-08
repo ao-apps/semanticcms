@@ -62,6 +62,9 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 					<!-- TODO:
 					<li>TODO: New project <core:link book="/bom" page="/index.jspx" /> for managed dependencies.</li>
 					-->
+					<!-- TODO:
+					<li>New view for recently changed.</li>
+					-->
 				</ul>
 			</changelog:release>
 		</c:if>
