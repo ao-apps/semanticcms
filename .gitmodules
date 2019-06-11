@@ -55,3 +55,6 @@
 [submodule "website"]
 	path = website
 	url = git@github.com:aoindustries/semanticcms-website
+[submodule "bom"]
+	path = bom
+	url = git@aoindustries.github.com:aoindustries/semanticcms-bom.git

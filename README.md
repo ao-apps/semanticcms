@@ -27,6 +27,7 @@ Aggregator POM for all [SemanticCMS](https://github.com/aoindustries/semanticcms
 * [GitHub](https://github.com/aoindustries/semanticcms)
 
 ## Modules
+* [SemanticCMS BOM](https://github.com/aoindustries/semanticcms-bom)
 * [SemanticCMS All](https://github.com/aoindustries/semanticcms-all)
 * [SemanticCMS AutoGit](https://github.com/aoindustries/semanticcms-autogit)
 * [SemanticCMS Changelog Taglib](https://github.com/aoindustries/semanticcms-changelog-taglib)

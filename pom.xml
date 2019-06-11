@@ -47,10 +47,8 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 
 	<modules>
 		<module>book</module>
-		<!-- TODO:
 		<module>bom</module>
 		<module>bom/book</module>
-		-->
 		<module>all</module>
 		<module>all/book</module>
 		<module>autogit</module>
