@@ -33,9 +33,10 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 		title="@{documented.name}"
 		description="@{documented.description}"
 		datePublished="2016-10-18T19:00:00-0500"
-		dateModified="2019-06-01T18:51:51-0500"
+		dateModified="2019-06-11T04:56:15-0500"
 	>
 		<core:child page="changelog" />
+		<core:child book="/bom" page="/" />
 		<core:child book="/all" page="/" />
 		<core:child book="/autogit" page="/" />
 		<core:child book="/changelog/taglib" page="/" />
@@ -78,6 +79,7 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 		</section:nav>
 		<section:section label="Modules">
 			<ul>
+				<li><core:link book="/bom" page="/" /></li>
 				<li><core:link book="/all" page="/" /></li>
 				<li><core:link book="/autogit" page="/" /></li>
 				<li><core:link book="/changelog/taglib" page="/" /></li>

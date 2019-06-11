@@ -61,3 +61,6 @@
 [submodule "pages"]
 	path = pages
 	url = git@github.com:aoindustries/semanticcms-pages.git
+[submodule "bom"]
+	path = bom
+	url = git@aoindustries.github.com:aoindustries/semanticcms-bom.git
