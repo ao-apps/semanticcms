@@ -49,7 +49,7 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 			https://realfavicongenerator.net/blog/apple-touch-icon-the-good-the-bad-the-ugly/
 			https://realfavicongenerator.net/blog/android-8-oreo-process-home-screen-icon/
 		-->
-		<c:if test="${fn:endsWith(version, '-SNAPSHOT') and !fn:endsWith(version, '-validation-SNAPSHOT')}">
+		<c:if test="${fn:endsWith(version, '-SNAPSHOT') and !fn:endsWith(version, '-POST-SNAPSHOT')}">
 			<changelog:release
 				projectName="@{documented.name}"
 				version="#{version}"
