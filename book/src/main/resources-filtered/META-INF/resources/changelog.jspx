@@ -52,7 +52,7 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 		<!-- TODO:
 			New view for recently changed.
 		-->
-		<c:if test="${fn:endsWith(version, '-SNAPSHOT') and !fn:endsWith(version, '-validation-SNAPSHOT')}">
+		<c:if test="${fn:endsWith(version, '-SNAPSHOT') and !fn:endsWith(version, '-POST-SNAPSHOT')}">
 			<changelog:release
 				projectName="@{documented.name}"
 				version="#{version}"
