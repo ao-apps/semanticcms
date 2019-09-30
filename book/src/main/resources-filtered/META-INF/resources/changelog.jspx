@@ -36,7 +36,7 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 		shortTitle="Changelog"
 		tocLevels="1"
 		datePublished="2016-11-06T02:50:50-0600"
-		dateModified="2019-06-23T02:05:08-0500"
+		dateModified="2019-09-30T07:21:12-0500"
 	>
 		<!-- The current snapshot, unreleased version -->
 		<c:set var="version" value="@{com.semanticcms:semanticcms:pom.version}" />
@@ -59,7 +59,20 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 				groupId="@{documented.groupId}"
 				artifactId="@{documented.artifactId}"
 				scmUrl="@{documented.scm.url}"
-			/>
+			>
+				<ul>
+					<li>Updated version of <core:link book="/bom" page="/index.jspx" />.</li>
+					<li>Updated version of <core:link book="/all" page="/index.jspx" />.</li>
+					<li>Updated version of <core:link book="/core/all" page="/index.jspx" />.</li>
+					<li>Updated version of <core:link book="/dia/all" page="/index.jspx" />.</li>
+					<li>Updated version of <core:link book="/file/all" page="/index.jspx" />.</li>
+					<li>Updated version of <core:link book="/news/all" page="/index.jspx" />.</li>
+					<li>Updated version of <core:link book="/openfile/all" page="/index.jspx" />.</li>
+					<li>Updated version of <core:link book="/section/all" page="/index.jspx" />.</li>
+					<li>Updated version of <core:link book="/tag-reference" page="/index.jspx" />.</li>
+					<li>Updated version of <core:link book="/view-all" page="/index.jspx" />.</li>
+				</ul>
+			</changelog:release>
 		</c:if>
 
 		<changelog:release
