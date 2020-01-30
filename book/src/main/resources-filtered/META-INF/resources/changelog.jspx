@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 semanticcms - Aggregator POM for all SemanticCMS packages.
-Copyright (C) 2016, 2017, 2019  AO Industries, Inc.
+Copyright (C) 2016, 2017, 2019, 2020  AO Industries, Inc.
     support@aoindustries.com
     7262 Bull Pen Cir
     Mobile, AL 36695
@@ -36,7 +36,7 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 		shortTitle="Changelog"
 		tocLevels="1"
 		datePublished="2016-11-06T02:50:50-0600"
-		dateModified="2019-10-21T09:52:08-0500"
+		dateModified="2020-01-29T23:21:09-0600"
 	>
 		<!-- The current snapshot, unreleased version -->
 		<c:set var="version" value="@{com.semanticcms:semanticcms:pom.version}" />
@@ -68,6 +68,7 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 					<li>Updated version of <core:link book="/google-analytics" page="/index.jspx" />.</li>
 					<li>Updated version of <core:link book="/tag-reference" page="/index.jspx" />.</li>
 					<li>Updated version of <core:link book="/theme-documentation" page="/index.jspx" />.</li>
+					<li>Updated version of <core:link book="/theme-documentation/style" page="/index.jspx" />.</li>
 				</ul>
 			</changelog:release>
 		</c:if>
