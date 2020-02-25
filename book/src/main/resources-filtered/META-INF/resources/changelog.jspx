@@ -30,7 +30,8 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 	xmlns:jsp="http://java.sun.com/JSP/Page"
 	version="2.1"
 >
-	<jsp:directive.page language="java" pageEncoding="UTF-8" session="false" />
+	<jsp:directive.page language="java" pageEncoding="UTF-8" />
+	<jsp:directive.page session="false" />
 	<core:page
 		title="@{documented.name} Changelog"
 		shortTitle="Changelog"
