@@ -39,9 +39,9 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 
 	<scm>
 		<!-- Can't inherit due to multi-module -->
-		<connection>scm:git:git://github.com/aoindustries/${project.artifactId}.git</connection>
-		<developerConnection>scm:git:git@github.com:aoindustries/${project.artifactId}.git</developerConnection>
-		<url>https://github.com/aoindustries/${project.artifactId}</url>
+		<connection>scm:git:git://github.com/aoindustries/semanticcms.git</connection>
+		<developerConnection>scm:git:git@github.com:aoindustries/semanticcms.git</developerConnection>
+		<url>https://github.com/aoindustries/semanticcms</url>
 		<tag>HEAD</tag>
 	</scm>
 
