@@ -34,27 +34,23 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 
 	<properties>
 		<!-- These values are copied from the project being documented -->
-		<documented.groupId>com.semanticcms</documented.groupId><documented.artifactId>semanticcms</documented.artifactId>
+		<documented.artifactId>semanticcms</documented.artifactId>
 		<documented.name>SemanticCMS</documented.name>
 		<documented.shortTitle />
-		<documented.url>https://semanticcms.com/</documented.url>
 		<documented.description>Aggregator POM for all SemanticCMS packages.</documented.description>
-		<documented.inceptionYear>2016</documented.inceptionYear>
-		<documented.scm.url>https://github.com/aoindustries/${documented.artifactId}</documented.scm.url>
 
-		<description.html><![CDATA[Documentation for <a target="_top" href="${documented.url}">${documented.name}</a> in <a target="_top" href="https://semanticcms.com/">SemanticCMS</a> format.]]></description.html>
+		<description.html><![CDATA[Documentation for <a target="_top" href="${project.url}">${documented.name}</a> in <a target="_top" href="https://semanticcms.com/">SemanticCMS</a> format.]]></description.html>
 	</properties>
 
-	<name>${documented.name} Book</name>
-	<url>${documented.url}</url>
-	<description>Documentation for ${documented.name} in SemanticCMS format.</description>
-	<inceptionYear>${documented.inceptionYear}</inceptionYear>
+	<name>SemanticCMS Book</name>
+	<url>https://semanticcms.com/</url>
+	<description>Documentation for SemanticCMS in SemanticCMS format.</description>
+	<inceptionYear>2016</inceptionYear>
 
 	<scm>
-		<!-- Can't inherit due to multi-module -->
-		<connection>scm:git:git://github.com/aoindustries/${documented.artifactId}.git</connection>
-		<developerConnection>scm:git:git@github.com:aoindustries/${documented.artifactId}.git</developerConnection>
-		<url>${documented.scm.url}</url>
+		<connection>scm:git:git://github.com/aoindustries/semanticcms.git</connection>
+		<developerConnection>scm:git:git@github.com:aoindustries/semanticcms.git</developerConnection>
+		<url>https://github.com/aoindustries/semanticcms</url>
 		<tag>HEAD</tag>
 	</scm>
 
@@ -62,7 +58,7 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 		<dependencies>
 			<!-- Java EE -->
 			<dependency>
-				<groupId>com.aoindustries</groupId><artifactId>javaee-web-api-bom</artifactId><version>6.0.0${POST-SNAPSHOT}</version>
+				<groupId>com.aoindustries</groupId><artifactId>javaee-web-api-bom</artifactId><version>6.0.1-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
