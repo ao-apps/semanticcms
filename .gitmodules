@@ -1,66 +1,88 @@
 [submodule "changelog-taglib"]
 	path = changelog-taglib
 	url = git@github.com:aoindustries/semanticcms-changelog-taglib
+	branch = .
 [submodule "all"]
 	path = all
 	url = git@github.com:aoindustries/semanticcms-all.git
+	branch = .
 [submodule "autogit"]
 	path = autogit
 	url = git@github.com:aoindustries/semanticcms-autogit.git
+	branch = .
 [submodule "core"]
 	path = core
 	url = git@github.com:aoindustries/semanticcms-core.git
+	branch = .
 [submodule "dia"]
 	path = dia
 	url = git@github.com:aoindustries/semanticcms-dia.git
+	branch = .
 [submodule "file"]
 	path = file
 	url = git@github.com:aoindustries/semanticcms-file.git
+	branch = .
 [submodule "google-analytics"]
 	path = google-analytics
 	url = git@github.com:aoindustries/semanticcms-google-analytics.git
+	branch = .
 [submodule "news"]
 	path = news
 	url = git@github.com:aoindustries/semanticcms-news.git
+	branch = .
 [submodule "openfile"]
 	path = openfile
 	url = git@github.com:aoindustries/semanticcms-openfile.git
+	branch = .
 [submodule "pagegraph"]
 	path = pagegraph
 	url = git@github.com:aoindustries/semanticcms-pagegraph.git
+	branch = .
 [submodule "section"]
 	path = section
 	url = git@github.com:aoindustries/semanticcms-section.git
+	branch = .
 [submodule "theme-documentation"]
 	path = theme-documentation
 	url = git@github.com:aoindustries/semanticcms-theme-documentation.git
+	branch = .
 [submodule "theme-documentation-style"]
 	path = theme-documentation-style
 	url = git@github.com:aoindustries/semanticcms-theme-documentation-style.git
+	branch = .
 [submodule "view-all"]
 	path = view-all
 	url = git@github.com:aoindustries/semanticcms-view-all.git
+	branch = .
 [submodule "view-tree"]
 	path = view-tree
 	url = git@github.com:aoindustries/semanticcms-view-tree.git
+	branch = .
 [submodule "view-what-links-here"]
 	path = view-what-links-here
 	url = git@github.com:aoindustries/semanticcms-view-what-links-here.git
+	branch = .
 [submodule "tag-reference"]
 	path = tag-reference
 	url = git@github.com:aoindustries/semanticcms-tag-reference
+	branch = .
 [submodule "parent"]
 	path = parent
 	url = git@github.com:aoindustries/semanticcms-parent
+	branch = .
 [submodule "website"]
 	path = website
 	url = git@github.com:aoindustries/semanticcms-website
+	branch = .
 [submodule "resources"]
 	path = resources
 	url = git@github.com:aoindustries/semanticcms-resources.git
+	branch = .
 [submodule "pages"]
 	path = pages
 	url = git@github.com:aoindustries/semanticcms-pages.git
+	branch = .
 [submodule "bom"]
 	path = bom
 	url = git@aoindustries.github.com:aoindustries/semanticcms-bom.git
+	branch = .
