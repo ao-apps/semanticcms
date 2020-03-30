@@ -37,7 +37,7 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 		shortTitle="Changelog"
 		tocLevels="1"
 		datePublished="2016-11-06T02:50:50-0600"
-		dateModified="2019-10-14T03:37:58-0500"
+		dateModified="2020-03-30T01:33:42-05:00"
 	>
 		<!-- The current snapshot, unreleased version -->
 		<c:set var="version" value="@{com.semanticcms:semanticcms:pom.version}" />
@@ -68,6 +68,41 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 				</ul>
 			</changelog:release>
 		</c:if>
+
+		<changelog:release
+			projectName="@{documented.name}"
+			version="1.10.0"
+			datePublished="2020-03-30T01:33:42-05:00"
+			groupId="@{project.groupId}"
+			artifactId="@{documented.artifactId}"
+			scmUrl="@{project.scm.url}"
+		>
+			<ul>
+				<li>
+					Reduced use of property substitutions in <code>pom.xml</code>.
+					This is to help 3rd-party parsers that fail to perform full Maven-compatible substitutions.
+				</li>
+				<li>Updated version of <core:link book="/bom" page="/" />.</li>
+				<li>Updated version of <core:link book="/all" page="/" />.</li>
+				<li>Updated version of <core:link book="/autogit" page="/" />.</li>
+				<li>Updated version of <core:link book="/changelog/taglib" page="/" />.</li>
+				<li>Updated version of <core:link book="/core" page="/" />.</li>
+				<li>Updated version of <core:link book="/dia" page="/" />.</li>
+				<li>Updated version of <core:link book="/file" page="/" />.</li>
+				<li>Updated version of <core:link book="/google-analytics" page="/" />.</li>
+				<li>Updated version of <core:link book="/news" page="/" />.</li>
+				<li>Updated version of <core:link book="/openfile" page="/" />.</li>
+				<li>Updated version of <core:link book="/pagegraph" page="/" />.</li>
+				<li>Updated version of <core:link book="/parent" page="/" />.</li>
+				<li>Updated version of <core:link book="/section" page="/" />.</li>
+				<li>Updated version of <core:link book="/tag-reference" page="/" />.</li>
+				<li>Updated version of <core:link book="/theme-documentation" page="/" />.</li>
+				<li>Updated version of <core:link book="/theme-documentation/style" page="/" />.</li>
+				<li>Updated version of <core:link book="/view-all" page="/" />.</li>
+				<li>Updated version of <core:link book="/view-tree" page="/" />.</li>
+				<li>Updated version of <core:link book="/view-what-links-here" page="/" />.</li>
+			</ul>
+		</changelog:release>
 
 		<changelog:release
 			projectName="@{documented.name}"
