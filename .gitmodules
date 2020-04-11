@@ -1,6 +1,6 @@
-[submodule "changelog-taglib"]
-	path = changelog-taglib
-	url = git@github.com:aoindustries/semanticcms-changelog-taglib
+[submodule "bom"]
+	path = bom
+	url = git@github.com:aoindustries/semanticcms-bom.git
 	branch = .
 [submodule "all"]
 	path = all
@@ -9,6 +9,10 @@
 [submodule "autogit"]
 	path = autogit
 	url = git@github.com:aoindustries/semanticcms-autogit.git
+	branch = .
+[submodule "changelog-taglib"]
+	path = changelog-taglib
+	url = git@github.com:aoindustries/semanticcms-changelog-taglib
 	branch = .
 [submodule "core"]
 	path = core
@@ -38,9 +42,25 @@
 	path = pagegraph
 	url = git@github.com:aoindustries/semanticcms-pagegraph.git
 	branch = .
+[submodule "pages"]
+	path = pages
+	url = git@github.com:aoindustries/semanticcms-pages.git
+	branch = .
+[submodule "parent"]
+	path = parent
+	url = git@github.com:aoindustries/semanticcms-parent
+	branch = .
+[submodule "resources"]
+	path = resources
+	url = git@github.com:aoindustries/semanticcms-resources.git
+	branch = .
 [submodule "section"]
 	path = section
 	url = git@github.com:aoindustries/semanticcms-section.git
+	branch = .
+[submodule "tag-reference"]
+	path = tag-reference
+	url = git@github.com:aoindustries/semanticcms-tag-reference
 	branch = .
 [submodule "theme-documentation"]
 	path = theme-documentation
@@ -62,27 +82,7 @@
 	path = view-what-links-here
 	url = git@github.com:aoindustries/semanticcms-view-what-links-here.git
 	branch = .
-[submodule "tag-reference"]
-	path = tag-reference
-	url = git@github.com:aoindustries/semanticcms-tag-reference
-	branch = .
-[submodule "parent"]
-	path = parent
-	url = git@github.com:aoindustries/semanticcms-parent
-	branch = .
 [submodule "website"]
 	path = website
 	url = git@github.com:aoindustries/semanticcms-website
-	branch = .
-[submodule "resources"]
-	path = resources
-	url = git@github.com:aoindustries/semanticcms-resources.git
-	branch = .
-[submodule "pages"]
-	path = pages
-	url = git@github.com:aoindustries/semanticcms-pages.git
-	branch = .
-[submodule "bom"]
-	path = bom
-	url = git@aoindustries.github.com:aoindustries/semanticcms-bom.git
 	branch = .
