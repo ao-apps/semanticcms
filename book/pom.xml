@@ -25,11 +25,11 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
-		<groupId>com.semanticcms</groupId><artifactId>semanticcms-parent</artifactId><version>1.6.1-POST-SNAPSHOT</version>
+		<groupId>com.semanticcms</groupId><artifactId>semanticcms-parent</artifactId><version>1.7.0-SNAPSHOT</version>
 		<relativePath>../parent/pom.xml</relativePath>
 	</parent>
 
-	<groupId>com.semanticcms</groupId><artifactId>semanticcms-book</artifactId><version>1.10.0-POST-SNAPSHOT</version>
+	<groupId>com.semanticcms</groupId><artifactId>semanticcms-book</artifactId><version>1.11.0-SNAPSHOT</version>
 	<packaging>bundle</packaging>
 
 	<properties>
@@ -39,7 +39,7 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 		<documented.shortTitle />
 		<documented.description>Aggregator POM for all SemanticCMS packages.</documented.description>
 
-		<description.html><![CDATA[Documentation for <a target="_top" href="${project.url}">${documented.name}</a> in <a target="_top" href="https://semanticcms.com/">SemanticCMS</a> format.]]></description.html>
+		<description.html><![CDATA[Documentation for <a target="${javadoc.target}" href="${project.url}">${documented.name}</a> in <a target="${javadoc.target}" href="https://semanticcms.com/">SemanticCMS</a> format.]]></description.html>
 	</properties>
 
 	<name>SemanticCMS Book</name>
@@ -111,7 +111,7 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 		</dependency>
 		<!-- Dependency for dependencyversion-maven-plugin only -->
 		<dependency>
-			<groupId>com.semanticcms</groupId><artifactId>semanticcms</artifactId><version>1.10.0-POST-SNAPSHOT</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms</artifactId><version>1.11.0-SNAPSHOT</version>
 			<type>pom</type>
 			<scope>provided</scope>
 			<optional>true</optional>
