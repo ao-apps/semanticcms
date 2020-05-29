@@ -37,7 +37,7 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 		shortTitle="Changelog"
 		tocLevels="1"
 		datePublished="2016-11-06T02:50:50-0600"
-		dateModified="2020-05-28T02:23:01-05:00"
+		dateModified="2020-05-28T16:53:58-05:00"
 	>
 		<!-- The current snapshot, unreleased version -->
 		<c:set var="version" value="@{com.semanticcms:semanticcms:pom.version}" />
@@ -62,7 +62,10 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 				scmUrl="@{project.scm.url}"
 			>
 				<ul>
+					<li>Updated version of <core:link book="/bom" page="/index.jspx" />.</li>
+					<li>Updated version of <core:link book="/all" page="/index.jspx" />.</li>
 					<li>Updated version of <core:link book="/parent" page="/index.jspx" />.</li>
+					<li>Updated version of <core:link book="/tag-reference" page="/index.jspx" />.</li>
 				</ul>
 			</changelog:release>
 		</c:if>

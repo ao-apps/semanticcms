@@ -29,7 +29,7 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 		<relativePath>../parent/pom.xml</relativePath>
 	</parent>
 
-	<groupId>com.semanticcms</groupId><artifactId>semanticcms-book</artifactId><version>1.13.1-SNAPSHOT</version>
+	<groupId>com.semanticcms</groupId><artifactId>semanticcms-book</artifactId><version>1.14.0-SNAPSHOT</version>
 	<packaging>bundle</packaging>
 
 	<properties>
@@ -111,7 +111,7 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 		</dependency>
 		<!-- Dependency for dependencyversion-maven-plugin only -->
 		<dependency>
-			<groupId>com.semanticcms</groupId><artifactId>semanticcms</artifactId><version>1.13.1-SNAPSHOT</version>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms</artifactId><version>1.14.0-SNAPSHOT</version>
 			<type>pom</type>
 			<scope>provided</scope>
 			<optional>true</optional>
