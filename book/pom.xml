@@ -61,7 +61,7 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 
 	<dependencyManagement>
 		<dependencies>
-			<!-- Java EE -->
+			<!-- BOM -->
 			<dependency>
 				<groupId>com.aoindustries</groupId><artifactId>javaee-web-api-bom</artifactId><version>6.0.1${POST-SNAPSHOT}</version>
 				<type>pom</type>
@@ -71,15 +71,6 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 	</dependencyManagement>
 
 	<dependencies>
-		<!-- Java EE -->
-		<dependency>
-			<groupId>javax.servlet</groupId><artifactId>javax.servlet-api</artifactId>
-			<scope>provided</scope>
-		</dependency>
-		<dependency>
-			<groupId>javax.servlet.jsp</groupId><artifactId>javax.servlet.jsp-api</artifactId>
-			<scope>provided</scope>
-		</dependency>
 		<!-- Runtime Direct -->
 		<dependency>
 			<groupId>com.aoindustries</groupId><artifactId>ao-badges</artifactId><version>2.0.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
@@ -90,11 +81,11 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 			<scope>runtime</scope>
 		</dependency>
 		<dependency>
-			<groupId>javax.servlet</groupId><artifactId>jstl</artifactId>
+			<groupId>javax.servlet</groupId><artifactId>jstl</artifactId><!-- javaee-web-api-bom -->
 			<scope>runtime</scope>
 		</dependency>
 		<dependency>
-			<groupId>org.glassfish.web</groupId><artifactId>jstl-impl</artifactId>
+			<groupId>org.glassfish.web</groupId><artifactId>jstl-impl</artifactId><!-- javaee-web-api-bom -->
 			<scope>runtime</scope>
 		</dependency>
 		<dependency>
