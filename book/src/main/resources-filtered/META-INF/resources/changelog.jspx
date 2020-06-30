@@ -37,7 +37,7 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 		shortTitle="Changelog"
 		tocLevels="1"
 		datePublished="2016-11-06T02:50:50-0600"
-		dateModified="2020-06-29T14:40:45-05:00"
+		dateModified="2020-06-30T12:41:01-05:00"
 	>
 		<!-- The current snapshot, unreleased version -->
 		<c:set var="version" value="@{com.semanticcms:semanticcms:pom.version}" />
@@ -49,6 +49,9 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 			https://stackoverflow.com/questions/2997437/what-size-should-apple-touch-icon-png-be-for-ipad-and-iphone, 
 			https://realfavicongenerator.net/blog/apple-touch-icon-the-good-the-bad-the-ugly/
 			https://realfavicongenerator.net/blog/android-8-oreo-process-home-screen-icon/
+		-->
+		<!-- TODO:
+			New view for recently changed.
 		-->
 		<c:if test="${fn:endsWith(version, '-SNAPSHOT') and !fn:endsWith(version, '-POST-SNAPSHOT')}">
 			<changelog:release
@@ -62,15 +65,26 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 					<li>Now on SemanticCMS 2.</li>
 					<li>New module <core:link book="/pages" page="/" />.</li>
 					<li>New module <core:link book="/repository" page="/" />.</li>
-					<li>Updated version of <core:link book="/bom" page="/" />.</li>
-					<li>Updated version of <core:link book="/all" page="/" />.</li>
-					<li>Updated version of <core:link book="/news" page="/" />.</li>
-					<!-- TODO:
-					<li>New view for recently changed.</li>
-					-->
 				</ul>
 			</changelog:release>
 		</c:if>
+
+		<changelog:release
+			projectName="@{documented.name}"
+			version="1.15.0"
+			datePublished="2020-06-30T12:41:01-05:00"
+			groupId="@{project.groupId}"
+			artifactId="@{documented.artifactId}"
+			scmUrl="@{project.scm.url}"
+		>
+			<ul>
+				<li>Updated version of <core:link book="/bom" page="/" />.</li>
+				<li>Updated version of <core:link book="/all" page="/" />.</li>
+				<li>Updated version of <core:link book="/changelog/taglib" page="/" />.</li>
+				<li>Updated version of <core:link book="/core" page="/" />.</li>
+				<li>Updated version of <core:link book="/news" page="/" />.</li>
+			</ul>
+		</changelog:release>
 
 		<changelog:release
 			projectName="@{documented.name}"
