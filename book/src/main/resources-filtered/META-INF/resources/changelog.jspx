@@ -37,7 +37,7 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 		shortTitle="Changelog"
 		tocLevels="1"
 		datePublished="2016-11-06T02:50:50-0600"
-		dateModified="2020-06-30T12:41:01-05:00"
+		dateModified="2020-08-19T23:54:02-05:00"
 	>
 		<!-- The current snapshot, unreleased version -->
 		<c:set var="version" value="@{com.semanticcms:semanticcms:pom.version}" />
@@ -65,6 +65,14 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 					<li>Now on SemanticCMS 2.</li>
 					<li>New module <core:link book="/pages" page="/" />.</li>
 					<li>New module <core:link book="/repository" page="/" />.</li>
+					<li>Updated version of <core:link book="/bom" page="/" />.</li>
+					<li>Updated version of <core:link book="/all" page="/" />.</li>
+					<li>Updated version of <core:link book="/autogit" page="/" />.</li>
+					<li>Updated version of <core:link book="/core" page="/" />.</li>
+					<li>Updated version of <core:link book="/openfile" page="/" />.</li>
+					<li>Updated version of <core:link book="/pagegraph" page="/" />.</li>
+					<li>Updated version of <core:link book="/parent" page="/" />.</li>
+					<li>Updated version of <core:link book="/theme-documentation" page="/" />.</li>
 				</ul>
 			</changelog:release>
 		</c:if>
