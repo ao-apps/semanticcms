@@ -37,7 +37,7 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 		shortTitle="Changelog"
 		tocLevels="1"
 		datePublished="2016-11-06T02:50:50-0600"
-		dateModified="2020-11-16T23:45:23-06:00"
+		dateModified="2020-11-18T23:21:44-06:00"
 	>
 		<!-- The current snapshot, unreleased version -->
 		<c:set var="version" value="@{com.semanticcms:semanticcms:pom.version}" />
@@ -65,7 +65,11 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 					<li>Updated version of <core:link book="/bom" page="/index.jspx" />.</li>
 					<li>Updated version of <core:link book="/all" page="/index.jspx" />.</li>
 					<li>Updated version of <core:link book="/autogit" page="/index.jspx" />.</li>
+					<li>Updated version of <core:link book="/changelog/taglib" page="/index.jspx" />.</li>
 					<li>Updated version of <core:link book="/core" page="/index.jspx" />.</li>
+					<li>Updated version of <core:link book="/dia" page="/index.jspx" />.</li>
+					<li>Updated version of <core:link book="/file" page="/index.jspx" />.</li>
+					<li>Updated version of <core:link book="/news" page="/index.jspx" />.</li>
 					<li>Updated version of <core:link book="/openfile" page="/index.jspx" />.</li>
 					<li>Updated version of <core:link book="/pagegraph" page="/index.jspx" />.</li>
 					<li>Updated version of <core:link book="/parent" page="/index.jspx" />.</li>
