@@ -37,7 +37,7 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 		shortTitle="Changelog"
 		tocLevels="1"
 		datePublished="2016-11-06T02:50:50-0600"
-		dateModified="2020-11-18T23:21:44-06:00"
+		dateModified="2020-11-28T05:22:39-06:00"
 	>
 		<!-- The current snapshot, unreleased version -->
 		<c:set var="version" value="@{com.semanticcms:semanticcms:pom.version}" />
@@ -65,23 +65,35 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 					<li>Now on SemanticCMS 2.</li>
 					<li>New module <core:link book="/pages" page="/" />.</li>
 					<li>New module <core:link book="/repository" page="/" />.</li>
-					<li>Updated version of <core:link book="/bom" page="/" />.</li>
-					<li>Updated version of <core:link book="/all" page="/" />.</li>
-					<li>Updated version of <core:link book="/autogit" page="/" />.</li>
-					<li>Updated version of <core:link book="/changelog/taglib" page="/" />.</li>
-					<li>Updated version of <core:link book="/core" page="/" />.</li>
-					<li>Updated version of <core:link book="/dia" page="/" />.</li>
-					<li>Updated version of <core:link book="/file" page="/" />.</li>
-					<li>Updated version of <core:link book="/news" page="/" />.</li>
-					<li>Updated version of <core:link book="/openfile" page="/" />.</li>
-					<li>Updated version of <core:link book="/pagegraph" page="/" />.</li>
-					<li>Updated version of <core:link book="/parent" page="/" />.</li>
-					<li>Updated version of <core:link book="/section" page="/" />.</li>
-					<li>Updated version of <core:link book="/tag-reference" page="/" />.</li>
-					<li>Updated version of <core:link book="/theme-documentation" page="/" />.</li>
 				</ul>
 			</changelog:release>
 		</c:if>
+
+		<changelog:release
+			projectName="@{documented.name}"
+			version="1.16.0"
+			datePublished="2020-11-28T05:22:39-06:00"
+			groupId="@{project.groupId}"
+			artifactId="@{documented.artifactId}"
+			scmUrl="@{project.scm.url}"
+		>
+			<ul>
+				<li>Updated version of <core:link book="/bom" page="/" />.</li>
+				<li>Updated version of <core:link book="/all" page="/" />.</li>
+				<li>Updated version of <core:link book="/autogit" page="/" />.</li>
+				<li>Updated version of <core:link book="/changelog/taglib" page="/" />.</li>
+				<li>Updated version of <core:link book="/core" page="/" />.</li>
+				<li>Updated version of <core:link book="/dia" page="/" />.</li>
+				<li>Updated version of <core:link book="/file" page="/" />.</li>
+				<li>Updated version of <core:link book="/news" page="/" />.</li>
+				<li>Updated version of <core:link book="/openfile" page="/" />.</li>
+				<li>Updated version of <core:link book="/pagegraph" page="/" />.</li>
+				<li>Updated version of <core:link book="/parent" page="/" />.</li>
+				<li>Updated version of <core:link book="/section" page="/" />.</li>
+				<li>Updated version of <core:link book="/tag-reference" page="/" />.</li>
+				<li>Updated version of <core:link book="/theme-documentation" page="/" />.</li>
+			</ul>
+		</changelog:release>
 
 		<changelog:release
 			projectName="@{documented.name}"
