@@ -39,12 +39,6 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 		datePublished="2016-11-06T02:50:50-0600"
 		dateModified="2020-12-05T05:01:07-06:00"
 	>
-		<!-- The current snapshot, unreleased version -->
-		<c:set var="version" value="@{com.semanticcms:semanticcms:pom.version}" />
-		<ao:assert
-			test="${!fn:startsWith(version, '@')}"
-			message="Version not substituted: #{version}"
-		/>
 		<!-- TODO: Create a new module for icons:
 			https://stackoverflow.com/questions/2997437/what-size-should-apple-touch-icon-png-be-for-ipad-and-iphone, 
 			https://realfavicongenerator.net/blog/apple-touch-icon-the-good-the-bad-the-ugly/
@@ -53,10 +47,10 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 		<!-- TODO:
 			New view for recently changed.
 		-->
-		<c:if test="${fn:endsWith(version, '-SNAPSHOT') and !fn:endsWith(version, '-POST-SNAPSHOT')}">
+		<c:if test="${fn:endsWith('@{project.version}', '-SNAPSHOT') and !fn:endsWith('@{project.version}', '-POST-SNAPSHOT')}">
 			<changelog:release
 				projectName="@{documented.name}"
-				version="#{version}"
+				version="@{project.version}"
 				groupId="@{project.groupId}"
 				artifactId="@{documented.artifactId}"
 				scmUrl="@{project.scm.url}"
