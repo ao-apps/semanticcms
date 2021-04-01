@@ -12,7 +12,7 @@
 	branch = .
 [submodule "changelog-taglib"]
 	path = changelog-taglib
-	url = git@github.com:aoindustries/semanticcms-changelog-taglib
+	url = git@github.com:aoindustries/semanticcms-changelog-taglib.git
 	branch = .
 [submodule "core"]
 	path = core
@@ -48,7 +48,7 @@
 	branch = .
 [submodule "parent"]
 	path = parent
-	url = git@github.com:aoindustries/semanticcms-parent
+	url = git@github.com:aoindustries/semanticcms-parent.git
 	branch = .
 [submodule "resources"]
 	path = resources
@@ -60,7 +60,7 @@
 	branch = .
 [submodule "tag-reference"]
 	path = tag-reference
-	url = git@github.com:aoindustries/semanticcms-tag-reference
+	url = git@github.com:aoindustries/semanticcms-tag-reference.git
 	branch = .
 [submodule "theme-documentation"]
 	path = theme-documentation
@@ -84,5 +84,5 @@
 	branch = .
 [submodule "website"]
 	path = website
-	url = git@github.com:aoindustries/semanticcms-website
+	url = git@github.com:aoindustries/semanticcms-website.git
 	branch = .
