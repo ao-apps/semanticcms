@@ -91,12 +91,12 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 						<!-- JSP Only -->
 						<dependency>com.aoindustries:ao-badges</dependency>
 						<dependency>com.aoindustries:ao-taglib</dependency>
-						<dependency>javax.servlet:jstl</dependency>
 						<dependency>com.semanticcms:semanticcms-changelog-taglib</dependency>
 						<dependency>com.semanticcms:semanticcms-core-taglib</dependency>
 						<dependency>com.semanticcms:semanticcms-section-taglib</dependency>
+						<dependency>org.apache.taglibs:taglibs-standard-spec</dependency>
 						<!-- Runtime Direct -->
-						<dependency>org.glassfish.web:jstl-impl</dependency>
+						<dependency>org.apache.taglibs:taglibs-standard-impl</dependency>
 						<dependency>com.semanticcms:semanticcms-core-pages-jspx</dependency>
 					</usedDependencies>
 				</configuration>
@@ -111,9 +111,8 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 				<groupId>com.aoindustries</groupId><artifactId>ao-badges</artifactId><version>2.0.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
 			</dependency>
 			<dependency>
-				<groupId>com.aoindustries</groupId><artifactId>ao-taglib</artifactId><version>6.4.1${POST-SNAPSHOT}</version>
+				<groupId>com.aoindustries</groupId><artifactId>ao-taglib</artifactId><version>6.5.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
 			</dependency>
-			<!-- javaee-web-api-bom: <groupId>javax.servlet</groupId><artifactId>jstl</artifactId> -->
 			<dependency>
 				<groupId>com.semanticcms</groupId><artifactId>semanticcms-changelog-taglib</artifactId><version>2.0.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
 			</dependency>
@@ -123,6 +122,7 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 			<dependency>
 				<groupId>com.semanticcms</groupId><artifactId>semanticcms-section-taglib</artifactId><version>2.0.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
 			</dependency>
+			<!-- javaee-web-api-bom: <groupId>org.apache.taglibs</groupId><artifactId>taglibs-standard-spec</artifactId> -->
 			<!-- Transitive -->
 			<dependency>
 				<groupId>com.aoindustries</groupId><artifactId>ao-collections</artifactId><version>1.2.0${POST-SNAPSHOT}</version>
@@ -134,10 +134,10 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 				<groupId>com.aoindustries</groupId><artifactId>ao-encoding</artifactId><version>4.0.0${POST-SNAPSHOT}</version>
 			</dependency>
 			<dependency>
-				<groupId>com.aoindustries</groupId><artifactId>ao-encoding-servlet</artifactId><version>3.0.0${POST-SNAPSHOT}</version>
+				<groupId>com.aoindustries</groupId><artifactId>ao-encoding-servlet</artifactId><version>3.1.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
 			</dependency>
 			<dependency>
-				<groupId>com.aoindustries</groupId><artifactId>ao-encoding-taglib</artifactId><version>1.0.2${POST-SNAPSHOT}</version>
+				<groupId>com.aoindustries</groupId><artifactId>ao-encoding-taglib</artifactId><version>1.1.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
 			</dependency>
 			<dependency>
 				<groupId>com.aoindustries</groupId><artifactId>ao-fluent-html</artifactId><version>0.4.0${POST-SNAPSHOT}</version>
@@ -146,7 +146,7 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 				<groupId>com.aoindustries</groupId><artifactId>ao-fluent-html-any</artifactId><version>0.4.0${POST-SNAPSHOT}</version>
 			</dependency>
 			<dependency>
-				<groupId>com.aoindustries</groupId><artifactId>ao-fluent-html-servlet</artifactId><version>0.4.0${POST-SNAPSHOT}</version>
+				<groupId>com.aoindustries</groupId><artifactId>ao-fluent-html-servlet</artifactId><version>0.4.1-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
 			</dependency>
 			<dependency>
 				<groupId>com.aoindustries</groupId><artifactId>ao-io-buffer</artifactId><version>3.3.0${POST-SNAPSHOT}</version>
@@ -158,22 +158,22 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 				<groupId>com.aoindustries</groupId><artifactId>ao-net-types</artifactId><version>1.3.0${POST-SNAPSHOT}</version>
 			</dependency>
 			<dependency>
-				<groupId>com.aoindustries</groupId><artifactId>ao-servlet-filter</artifactId><version>2.3.0${POST-SNAPSHOT}</version>
+				<groupId>com.aoindustries</groupId><artifactId>ao-servlet-filter</artifactId><version>2.4.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
 			</dependency>
 			<dependency>
-				<groupId>com.aoindustries</groupId><artifactId>ao-servlet-last-modified</artifactId><version>1.2.0${POST-SNAPSHOT}</version>
+				<groupId>com.aoindustries</groupId><artifactId>ao-servlet-last-modified</artifactId><version>1.3.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
 			</dependency>
 			<dependency>
-				<groupId>com.aoindustries</groupId><artifactId>ao-servlet-subrequest</artifactId><version>1.1.0${POST-SNAPSHOT}</version>
+				<groupId>com.aoindustries</groupId><artifactId>ao-servlet-subrequest</artifactId><version>1.2.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
 			</dependency>
 			<dependency>
-				<groupId>com.aoindustries</groupId><artifactId>ao-servlet-util</artifactId><version>3.5.1${POST-SNAPSHOT}</version>
+				<groupId>com.aoindustries</groupId><artifactId>ao-servlet-util</artifactId><version>3.6.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
 			</dependency>
 			<dependency>
 				<groupId>com.aoindustries</groupId><artifactId>ao-tempfiles</artifactId><version>2.0.0${POST-SNAPSHOT}</version>
 			</dependency>
 			<dependency>
-				<groupId>com.aoindustries</groupId><artifactId>ao-tempfiles-servlet</artifactId><version>1.1.0${POST-SNAPSHOT}</version>
+				<groupId>com.aoindustries</groupId><artifactId>ao-tempfiles-servlet</artifactId><version>1.2.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
 			</dependency>
 			<dependency>
 				<groupId>com.aoindustries</groupId><artifactId>ao-tlds</artifactId><version>1.2.0${POST-SNAPSHOT}</version>
@@ -182,7 +182,7 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 				<groupId>com.aoindustries</groupId><artifactId>ao-web-resources-registry</artifactId><version>0.2.0${POST-SNAPSHOT}</version>
 			</dependency>
 			<dependency>
-				<groupId>com.aoindustries</groupId><artifactId>ao-web-resources-servlet</artifactId><version>0.1.0${POST-SNAPSHOT}</version>
+				<groupId>com.aoindustries</groupId><artifactId>ao-web-resources-servlet</artifactId><version>0.4.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
 			</dependency>
 			<dependency>
 				<groupId>com.aoindustries</groupId><artifactId>aocode-public</artifactId><version>4.9.1${POST-SNAPSHOT}</version>
@@ -239,17 +239,17 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 				<groupId>com.semanticcms</groupId><artifactId>semanticcms-section-servlet</artifactId><version>2.0.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
 			</dependency>
 			<!-- Runtime Direct -->
-			<!-- javaee-web-api-bom: <groupId>org.glassfish.web</groupId><artifactId>jstl-impl</artifactId> -->
+			<!-- javaee-web-api-bom: <groupId>org.apache.taglibs</groupId><artifactId>taglibs-standard-impl</artifactId> -->
 			<dependency>
 				<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-pages-jspx</artifactId><version>2.0.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
 			</dependency>
 			<!-- Runtime Transitive -->
 			<dependency>
-				<groupId>com.aoindustries</groupId><artifactId>ao-style</artifactId><version>1.0.0${POST-SNAPSHOT}</version>
+				<groupId>com.aoindustries</groupId><artifactId>ao-style</artifactId><version>1.1.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
 			</dependency>
 			<!-- BOM -->
 			<dependency>
-				<groupId>com.aoindustries</groupId><artifactId>javaee-web-api-bom</artifactId><version>6.0.1${POST-SNAPSHOT}</version>
+				<groupId>com.aoindustries</groupId><artifactId>javaee-web-api-bom</artifactId><version>7.0.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
@@ -265,9 +265,6 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 			<groupId>com.aoindustries</groupId><artifactId>ao-taglib</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>javax.servlet</groupId><artifactId>jstl</artifactId>
-		</dependency>
-		<dependency>
 			<groupId>com.semanticcms</groupId><artifactId>semanticcms-changelog-taglib</artifactId>
 		</dependency>
 		<dependency>
@@ -276,9 +273,12 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 		<dependency>
 			<groupId>com.semanticcms</groupId><artifactId>semanticcms-section-taglib</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>org.apache.taglibs</groupId><artifactId>taglibs-standard-spec</artifactId>
+		</dependency>
 		<!-- Runtime Direct -->
 		<dependency>
-			<groupId>org.glassfish.web</groupId><artifactId>jstl-impl</artifactId>
+			<groupId>org.apache.taglibs</groupId><artifactId>taglibs-standard-impl</artifactId>
 			<scope>runtime</scope>
 		</dependency>
 		<dependency>
