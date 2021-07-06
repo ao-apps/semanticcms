@@ -272,7 +272,7 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 			</dependency>
 			<!-- Runtime Transitive -->
 			<dependency>
-				<groupId>com.aoapps</groupId><artifactId>ao-style</artifactId><version>2.0.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
+				<groupId>com.aoapps</groupId><artifactId>ao-style</artifactId><version>2.0.0${POST-SNAPSHOT}</version>
 			</dependency>
 			<!-- BOM -->
 			<dependency>
