@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 semanticcms - Aggregator POM for all SemanticCMS packages.
-Copyright (C) 2016, 2017, 2018, 2019  AO Industries, Inc.
+Copyright (C) 2016, 2017, 2018, 2019, 2021  AO Industries, Inc.
     support@aoindustries.com
     7262 Bull Pen Cir
     Mobile, AL 36695
@@ -31,6 +31,13 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 
 	<groupId>com.semanticcms</groupId><artifactId>semanticcms</artifactId><version>2.0.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
+
+	<properties>
+		<!-- SonarCloud.io -->
+		<sonar.projectKey>${project.groupId}:${project.artifactId}</sonar.projectKey>
+		<sonar.organization>aoindustries</sonar.organization>
+		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
+	</properties>
 
 	<name>SemanticCMS²</name>
 	<url>https://semanticcms.com/</url>
