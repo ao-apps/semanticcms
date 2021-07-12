@@ -32,6 +32,13 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 	<groupId>com.semanticcms</groupId><artifactId>semanticcms</artifactId><version>1.18.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
+	<properties>
+		<!-- SonarCloud.io -->
+		<sonar.projectKey>${project.groupId}:${project.artifactId}</sonar.projectKey>
+		<sonar.organization>aoindustries</sonar.organization>
+		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
+	</properties>
+
 	<name>SemanticCMS</name>
 	<url>https://semanticcms.com/</url>
 	<description>Aggregator POM for all SemanticCMS packages.</description>
