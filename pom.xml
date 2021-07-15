@@ -79,6 +79,11 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 		<url>https://github.com/aoindustries/semanticcms/issues</url>
 	</issueManagement>
 
+	<ciManagement>
+		<system>GitHub Actions</system>
+		<url>https://github.com/aoindustries/semanticcms/actions</url>
+	</ciManagement>
+
 	<modules>
 		<module>book</module>
 		<module>bom</module>
