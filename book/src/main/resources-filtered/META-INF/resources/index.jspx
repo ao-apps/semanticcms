@@ -34,7 +34,7 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 		title="@{documented.name}"
 		description="@{documented.description}"
 		datePublished="2016-10-18T19:00:00-05:00"
-		dateModified="2021-07-15T17:33:32-05:00"
+		dateModified="2021-07-16T03:48:08-05:00"
 	>
 		<core:child page="changelog" />
 		<core:child book="/bom" page="/" />
@@ -70,6 +70,11 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 				arg.mavenBadge="maven-central"
 				arg.groupId="@{project.groupId}"
 				arg.artifactId="@{documented.artifactId}"
+				arg.sonarQualityGate="true"
+				arg.sonarLinesOfCode="true"
+				arg.sonarReliability="true"
+				arg.sonarSecurity="true"
+				arg.sonarMaintainability="true"
 			/>
 		</header>
 		<p>
