@@ -37,7 +37,7 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 		shortTitle="Changelog"
 		tocLevels="1"
 		datePublished="2016-11-06T02:50:50-06:00"
-		dateModified="2021-08-17T18:36:35-05:00"
+		dateModified="2021-09-09T02:00:17-05:00"
 	>
 		<!-- TODO: Create a new module for icons:
 			https://stackoverflow.com/questions/2997437/what-size-should-apple-touch-icon-png-be-for-ipad-and-iphone, 
@@ -55,7 +55,14 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 				artifactId="@{documented.artifactId}"
 				repository="@{nexusUrl}content/repositories/snapshots/"
 				scmUrl="@{project.scm.url}"
-			/>
+			>
+				<ul>
+					<li>
+						Updated to latest releases of <ao:a href="https://github.com/s4u/pgp-keys-map">PGP keys map to maven artifacts</ao:a>
+						and <ao:a href="https://oss.aoapps.com/pgp-keys-map/">AO PGP Keys Map</ao:a>.
+					</li>
+				</ul>
+			</changelog:release>
 		</c:if>
 
 		<changelog:release
