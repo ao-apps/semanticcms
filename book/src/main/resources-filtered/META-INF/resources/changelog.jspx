@@ -61,7 +61,6 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 					<li>New module <core:link book="/pages" page="/" />.</li>
 					<li>New module <core:link book="/repository" page="/" />.</li>
 					<li>Updated to latest release of <ao:a href="https://github.com/s4u/pgp-keys-map">PGP keys map to maven artifacts</ao:a>.</li>
-					<li>Updated dependencies.</li>
 				</ul>
 			</changelog:release>
 		</c:if>
