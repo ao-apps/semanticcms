@@ -29,7 +29,7 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 		<relativePath>parent/pom.xml</relativePath>
 	</parent>
 
-	<groupId>com.semanticcms</groupId><artifactId>semanticcms</artifactId><version>1.18.2</version>
+	<groupId>com.semanticcms</groupId><artifactId>semanticcms</artifactId><version>1.18.2-POST-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<properties>
@@ -71,7 +71,7 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 		<connection>scm:git:git://github.com/aoindustries/semanticcms.git</connection>
 		<developerConnection>scm:git:git@github.com:aoindustries/semanticcms.git</developerConnection>
 		<url>https://github.com/aoindustries/semanticcms</url>
-		<tag>semanticcms-1.18.2</tag>
+		<tag>HEAD</tag>
 	</scm>
 
 	<issueManagement>
