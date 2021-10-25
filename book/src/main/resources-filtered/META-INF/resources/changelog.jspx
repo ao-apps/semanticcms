@@ -37,7 +37,7 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 		shortTitle="Changelog"
 		tocLevels="1"
 		datePublished="2016-11-06T02:50:50-06:00"
-		dateModified="2021-10-19T01:53:18-05:00"
+		dateModified="2021-10-25T09:14:13-05:00"
 	>
 		<!-- TODO: Create a new module for icons:
 			https://stackoverflow.com/questions/2997437/what-size-should-apple-touch-icon-png-be-for-ipad-and-iphone, 
@@ -60,6 +60,11 @@ along with semanticcms.  If not, see <http://www.gnu.org/licenses />.
 					<li>Now on SemanticCMS 2.</li>
 					<li>New module <core:link book="/pages" page="/" />.</li>
 					<li>New module <core:link book="/repository" page="/" />.</li>
+					<li>
+						No longer hiding <code>*.jspx</code> or <code>*.jsp</code> extensions for resources within
+						<code>/WEB-INF/*</code>.  This is to help interoperability with frameworks that hide their JSP
+						pages from direct access.
+					</li>
 				</ul>
 			</changelog:release>
 		</c:if>
