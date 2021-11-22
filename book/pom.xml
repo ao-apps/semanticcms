@@ -83,9 +83,30 @@ along with semanticcms.  If not, see <https://www.gnu.org/licenses/>.
 	</issueManagement>
 
 	<ciManagement>
+		<system>Jenkins</system>
+		<url>https://jenkins.aoindustries.com/job/ao/job/semanticcms/job/book/</url>
+	</ciManagement>
+	<!-- Only one allowed in POM:
+	<ciManagement>
 		<system>GitHub Actions</system>
 		<url>https://github.com/ao-apps/semanticcms/actions</url>
 	</ciManagement>
+	-->
+
+	<repositories>
+		<!-- Repository required here, too, so can find parent -->
+		<repository>
+			<id>sonatype-nexus-snapshots</id>
+			<name>Sonatype Nexus Snapshots</name>
+			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
+			<releases>
+				<enabled>false</enabled>
+			</releases>
+			<snapshots>
+				<checksumPolicy>fail</checksumPolicy>
+			</snapshots>
+		</repository>
+	</repositories>
 
 	<build>
 		<plugins>
@@ -100,8 +121,8 @@ along with semanticcms.  If not, see <https://www.gnu.org/licenses/>.
 						<dependency>com.semanticcms:semanticcms-section-taglib</dependency>
 						<dependency>org.apache.taglibs:taglibs-standard-spec</dependency>
 						<!-- Runtime Direct -->
-						<dependency>org.apache.taglibs:taglibs-standard-impl</dependency>
 						<dependency>com.semanticcms:semanticcms-core-pages-jspx</dependency>
+						<dependency>org.apache.taglibs:taglibs-standard-impl</dependency>
 					</usedDependencies>
 					<ignoredDependencies>
 						<!-- No "module-info.java" in some release builds -->
@@ -274,10 +295,10 @@ along with semanticcms.  If not, see <https://www.gnu.org/licenses/>.
 				<groupId>com.semanticcms</groupId><artifactId>semanticcms-section-servlet</artifactId><version>2.0.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
 			</dependency>
 			<!-- Runtime Direct -->
-			<!-- javaee-web-api-bom: <groupId>org.apache.taglibs</groupId><artifactId>taglibs-standard-impl</artifactId> -->
 			<dependency>
 				<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-pages-jspx</artifactId><version>2.0.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
 			</dependency>
+			<!-- javaee-web-api-bom: <groupId>org.apache.taglibs</groupId><artifactId>taglibs-standard-impl</artifactId> -->
 			<!-- Runtime Transitive -->
 			<dependency>
 				<groupId>com.aoapps</groupId><artifactId>ao-style</artifactId><version>2.0.1${POST-SNAPSHOT}</version>
@@ -313,11 +334,11 @@ along with semanticcms.  If not, see <https://www.gnu.org/licenses/>.
 		</dependency>
 		<!-- Runtime Direct -->
 		<dependency>
-			<groupId>org.apache.taglibs</groupId><artifactId>taglibs-standard-impl</artifactId>
+			<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-pages-jspx</artifactId>
 			<scope>runtime</scope>
 		</dependency>
 		<dependency>
-			<groupId>com.semanticcms</groupId><artifactId>semanticcms-core-pages-jspx</artifactId>
+			<groupId>org.apache.taglibs</groupId><artifactId>taglibs-standard-impl</artifactId>
 			<scope>runtime</scope>
 		</dependency>
 	</dependencies>
