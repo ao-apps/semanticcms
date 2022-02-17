@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 semanticcms - Aggregator POM for all SemanticCMS packages.
-Copyright (C) 2016, 2017, 2019, 2020, 2021  AO Industries, Inc.
+Copyright (C) 2016, 2017, 2019, 2020, 2021, 2022  AO Industries, Inc.
     support@aoindustries.com
     7262 Bull Pen Cir
     Mobile, AL 36695
@@ -37,7 +37,7 @@ along with semanticcms.  If not, see <https://www.gnu.org/licenses/>.
 		shortTitle="Changelog"
 		tocLevels="1"
 		datePublished="2016-11-06T02:50:50-06:00"
-		dateModified="2021-10-29T03:58:47-05:00"
+		dateModified="2022-02-16T22:46:17-06:00"
 	>
 		<!-- TODO: Create a new module for icons:
 			https://stackoverflow.com/questions/2997437/what-size-should-apple-touch-icon-png-be-for-ipad-and-iphone,
@@ -60,17 +60,29 @@ along with semanticcms.  If not, see <https://www.gnu.org/licenses/>.
 					<li>Now on SemanticCMS 2.</li>
 					<li>New module <core:link book="/pages" page="/" />.</li>
 					<li>New module <core:link book="/repository" page="/" />.</li>
-					<li>
-						No longer hiding <code>*.jspx</code> or <code>*.jsp</code> extensions for resources within
-						<code>/WEB-INF/*</code>.  This is to help interoperability with frameworks that hide their JSP
-						pages from direct access.
-					</li>
-					<li>Added 401, 403, and catch-all error handlers.</li>
-					<li>Require secure session cookies in production.</li>
-					<li>Now properly restoring Thread interrupted state on <code>InterruptedException</code>.</li>
 				</ul>
 			</changelog:release>
 		</c:if>
+
+		<changelog:release
+			projectName="@{documented.name}"
+			version="1.18.4"
+			datePublished="2022-02-16T22:46:17-06:00"
+			groupId="@{project.groupId}"
+			artifactId="@{documented.artifactId}"
+			scmUrl="@{project.scm.url}"
+		>
+			<ul>
+				<li>
+					No longer hiding <code>*.jspx</code> or <code>*.jsp</code> extensions for resources within
+					<code>/WEB-INF/*</code>.  This is to help interoperability with frameworks that hide their JSP
+					pages from direct access.
+				</li>
+				<li>Added 401, 403, and catch-all error handlers.</li>
+				<li>Require secure session cookies in production.</li>
+				<li>Now properly restoring Thread interrupted state on <code>InterruptedException</code>.</li>
+			</ul>
+		</changelog:release>
 
 		<changelog:release
 			projectName="@{documented.name}"
