@@ -25,11 +25,11 @@ along with semanticcms.  If not, see <https://www.gnu.org/licenses/>.
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
-		<groupId>com.semanticcms</groupId><artifactId>semanticcms-parent</artifactId><version>1.13.6-POST-SNAPSHOT</version>
+		<groupId>com.semanticcms</groupId><artifactId>semanticcms-parent</artifactId><version>1.13.7-SNAPSHOT</version>
 		<relativePath>parent/pom.xml</relativePath>
 	</parent>
 
-	<groupId>com.semanticcms</groupId><artifactId>semanticcms</artifactId><version>1.18.4-POST-SNAPSHOT</version>
+	<groupId>com.semanticcms</groupId><artifactId>semanticcms</artifactId><version>1.18.5-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<properties>
