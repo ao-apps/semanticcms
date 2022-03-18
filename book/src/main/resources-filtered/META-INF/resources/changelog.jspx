@@ -37,7 +37,7 @@ along with semanticcms.  If not, see <https://www.gnu.org/licenses/>.
 		shortTitle="Changelog"
 		tocLevels="1"
 		datePublished="2016-11-06T02:50:50-06:00"
-		dateModified="2022-03-15T08:10:34-05:00"
+		dateModified="2022-03-18T16:36:27-05:00"
 	>
 		<!-- TODO: Create a new module for icons:
 			https://stackoverflow.com/questions/2997437/what-size-should-apple-touch-icon-png-be-for-ipad-and-iphone,
@@ -62,6 +62,11 @@ along with semanticcms.  If not, see <https://www.gnu.org/licenses/>.
 					<li>New module <core:link book="/repository" page="/" />.</li>
 					<li>Updated to latest release of <ao:a href="https://github.com/s4u/pgp-keys-map">PGP keys map to maven artifacts</ao:a>.</li>
 					<li>Updated dependencies.</li>
+					<li>
+						Limited the workaround for <ao:a href="https://bugs.openjdk.java.net/browse/JDK-8215291">JDK-8215291</ao:a>
+						to only builds in <code><![CDATA[JDK &lt; 12]]></code> with no <code>src/main/java/module-info.java</code>.
+						The previous mitigation was applied too broadly and broke the search URLs for projects with modules.
+					</li>
 				</ul>
 			</changelog:release>
 		</c:if>
