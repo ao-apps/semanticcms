@@ -37,7 +37,7 @@ along with semanticcms.  If not, see <https://www.gnu.org/licenses/>.
 		shortTitle="Changelog"
 		tocLevels="1"
 		datePublished="2016-11-06T02:50:50-06:00"
-		dateModified="2022-04-11T11:18:56-05:00"
+		dateModified="2022-04-14T21:16:36-05:00"
 	>
 		<!-- TODO: Create a new module for icons:
 			https://stackoverflow.com/questions/2997437/what-size-should-apple-touch-icon-png-be-for-ipad-and-iphone,
@@ -68,6 +68,21 @@ along with semanticcms.  If not, see <https://www.gnu.org/licenses/>.
 						The previous mitigation was applied too broadly and broke the search URLs for projects with modules.
 					</li>
 					<li>Reduced size of Javadoc top section and fixed scroll position in Java 11.</li>
+					<li>
+						<p>
+							Enabled <ao:a href="https://checkstyle.org/">Checkstyle</ao:a> on all builds using
+							<ao:a href="https://maven.apache.org/plugins/maven-checkstyle-plugin/index.html">Apache Maven Checkstyle Plugin</ao:a>.
+						</p>
+						<p>
+							The default style is based on <ao:a href="https://checkstyle.org/google_style.html">Google's Java Style Checkstyle</ao:a>,
+							but with the maximum line length increased to 120 characters.
+						</p>
+						<p>
+							By default, builds fail on Checkstyle error.  Each project that cannot immediately be adapted
+							to pass the analysis should configure the plugin with
+							<code><![CDATA[&lt;failOnViolation&gt;false&lt;/failOnViolation&gt;]]></code>.
+						</p>
+					</li>
 					<li>
 						<p>
 							Enabled <ao:a href="https://spotbugs.github.io/">SpotBugs</ao:a> on all builds using
