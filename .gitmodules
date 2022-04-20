@@ -1,80 +1,80 @@
 [submodule "bom"]
-	path = bom
-	url = git@github.com:ao-apps/semanticcms-bom.git
-	branch = .
+  path = bom
+  url = git@github.com:ao-apps/semanticcms-bom.git
+  branch = .
 [submodule "all"]
-	path = all
-	url = git@github.com:ao-apps/semanticcms-all.git
-	branch = .
+  path = all
+  url = git@github.com:ao-apps/semanticcms-all.git
+  branch = .
 [submodule "autogit"]
-	path = autogit
-	url = git@github.com:ao-apps/semanticcms-autogit.git
-	branch = .
+  path = autogit
+  url = git@github.com:ao-apps/semanticcms-autogit.git
+  branch = .
 [submodule "changelog-taglib"]
-	path = changelog-taglib
-	url = git@github.com:ao-apps/semanticcms-changelog-taglib.git
-	branch = .
+  path = changelog-taglib
+  url = git@github.com:ao-apps/semanticcms-changelog-taglib.git
+  branch = .
 [submodule "core"]
-	path = core
-	url = git@github.com:ao-apps/semanticcms-core.git
-	branch = .
+  path = core
+  url = git@github.com:ao-apps/semanticcms-core.git
+  branch = .
 [submodule "dia"]
-	path = dia
-	url = git@github.com:ao-apps/semanticcms-dia.git
-	branch = .
+  path = dia
+  url = git@github.com:ao-apps/semanticcms-dia.git
+  branch = .
 [submodule "file"]
-	path = file
-	url = git@github.com:ao-apps/semanticcms-file.git
-	branch = .
+  path = file
+  url = git@github.com:ao-apps/semanticcms-file.git
+  branch = .
 [submodule "google-analytics"]
-	path = google-analytics
-	url = git@github.com:ao-apps/semanticcms-google-analytics.git
-	branch = .
+  path = google-analytics
+  url = git@github.com:ao-apps/semanticcms-google-analytics.git
+  branch = .
 [submodule "news"]
-	path = news
-	url = git@github.com:ao-apps/semanticcms-news.git
-	branch = .
+  path = news
+  url = git@github.com:ao-apps/semanticcms-news.git
+  branch = .
 [submodule "openfile"]
-	path = openfile
-	url = git@github.com:ao-apps/semanticcms-openfile.git
-	branch = .
+  path = openfile
+  url = git@github.com:ao-apps/semanticcms-openfile.git
+  branch = .
 [submodule "pagegraph"]
-	path = pagegraph
-	url = git@github.com:ao-apps/semanticcms-pagegraph.git
-	branch = .
+  path = pagegraph
+  url = git@github.com:ao-apps/semanticcms-pagegraph.git
+  branch = .
 [submodule "parent"]
-	path = parent
-	url = git@github.com:ao-apps/semanticcms-parent.git
-	branch = .
+  path = parent
+  url = git@github.com:ao-apps/semanticcms-parent.git
+  branch = .
 [submodule "section"]
-	path = section
-	url = git@github.com:ao-apps/semanticcms-section.git
-	branch = .
+  path = section
+  url = git@github.com:ao-apps/semanticcms-section.git
+  branch = .
 [submodule "tag-reference"]
-	path = tag-reference
-	url = git@github.com:ao-apps/semanticcms-tag-reference.git
-	branch = .
+  path = tag-reference
+  url = git@github.com:ao-apps/semanticcms-tag-reference.git
+  branch = .
 [submodule "theme-documentation"]
-	path = theme-documentation
-	url = git@github.com:ao-apps/semanticcms-theme-documentation.git
-	branch = .
+  path = theme-documentation
+  url = git@github.com:ao-apps/semanticcms-theme-documentation.git
+  branch = .
 [submodule "theme-documentation-style"]
-	path = theme-documentation-style
-	url = git@github.com:ao-apps/semanticcms-theme-documentation-style.git
-	branch = .
+  path = theme-documentation-style
+  url = git@github.com:ao-apps/semanticcms-theme-documentation-style.git
+  branch = .
 [submodule "view-all"]
-	path = view-all
-	url = git@github.com:ao-apps/semanticcms-view-all.git
-	branch = .
+  path = view-all
+  url = git@github.com:ao-apps/semanticcms-view-all.git
+  branch = .
 [submodule "view-tree"]
-	path = view-tree
-	url = git@github.com:ao-apps/semanticcms-view-tree.git
-	branch = .
+  path = view-tree
+  url = git@github.com:ao-apps/semanticcms-view-tree.git
+  branch = .
 [submodule "view-what-links-here"]
-	path = view-what-links-here
-	url = git@github.com:ao-apps/semanticcms-view-what-links-here.git
-	branch = .
+  path = view-what-links-here
+  url = git@github.com:ao-apps/semanticcms-view-what-links-here.git
+  branch = .
 [submodule "website"]
-	path = website
-	url = git@github.com:ao-apps/semanticcms-website.git
-	branch = .
+  path = website
+  url = git@github.com:ao-apps/semanticcms-website.git
+  branch = .
