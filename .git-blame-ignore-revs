@@ -1,2 +1,6 @@
 # Significant manual code formatting clean-up…
 0aa65c74a99ae50eaa2ccc0e0ba431150bb40011
+# Removed trailing whitespace
+49d311058383969e5acb70d71fcfa35c0632c272
+# Adding Google Analytics to SemanticCMS pages
+406f4967695466f6ebc01c9da1932a6c3fdd333b
