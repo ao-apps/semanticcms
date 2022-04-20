@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 semanticcms - Aggregator POM for all SemanticCMS packages.
-Copyright (C) 2016, 2017, 2019, 2020, 2021  AO Industries, Inc.
+Copyright (C) 2016, 2017, 2019, 2020, 2021, 2022  AO Industries, Inc.
     support@aoindustries.com
     7262 Bull Pen Cir
     Mobile, AL 36695
@@ -22,95 +22,95 @@ You should have received a copy of the GNU Lesser General Public License
 along with semanticcms.  If not, see <https://www.gnu.org/licenses/>.
 -->
 <jsp:root
-	xmlns:ao="https://oss.aoapps.com/taglib/"
-	xmlns:core="https://semanticcms.com/core/taglib/"
-	xmlns:jsp="http://java.sun.com/JSP/Page"
-	xmlns:section="https://semanticcms.com/section/taglib/"
-	version="2.1"
+  xmlns:ao="https://oss.aoapps.com/taglib/"
+  xmlns:core="https://semanticcms.com/core/taglib/"
+  xmlns:jsp="http://java.sun.com/JSP/Page"
+  xmlns:section="https://semanticcms.com/section/taglib/"
+  version="2.1"
 >
-	<jsp:directive.page language="java" pageEncoding="UTF-8" />
-	<jsp:directive.page session="false" />
-	<core:page
-		title="@{documented.name}"
-		description="@{documented.description}"
-		datePublished="2016-10-18T19:00:00-05:00"
-		dateModified="2021-07-16T03:48:08-05:00"
-	>
-		<core:child page="changelog" />
-		<core:child book="/bom" page="/" />
-		<core:child book="/all" page="/" />
-		<core:child book="/autogit" page="/" />
-		<core:child book="/changelog/taglib" page="/" />
-		<core:child book="/core" page="/" />
-		<core:child book="/dia" page="/" />
-		<core:child book="/file" page="/" />
-		<core:child book="/google-analytics" page="/" />
-		<core:child book="/news" page="/" />
-		<core:child book="/openfile" page="/" />
-		<core:child book="/pagegraph" page="/" />
-		<core:child book="/pages" page="/" />
-		<core:child book="/parent" page="/" />
-		<core:child book="/resources" page="/" />
-		<core:child book="/section" page="/" />
-		<core:child book="/tag-reference" page="/" />
-		<core:child book="/theme-documentation" page="/" />
-		<core:child book="/view-all" page="/" />
-		<core:child book="/view-tree" page="/" />
-		<core:child book="/view-what-links-here" page="/" />
-		<header>
-			<ao:include
-				page="/ao-badges/badges.inc.jspx"
-				arg.projectStatus="current-stable"
-				arg.managementStatus="production"
-				arg.packagingStatus="active"
-				arg.semanticVersioning="2.0.0"
-				arg.license="lgpl-3.0"
-				arg.scmUrl="@{project.scm.url}"
-				arg.githubBuildWorkflow="Build"
-				arg.mavenBadge="maven-central"
-				arg.groupId="@{project.groupId}"
-				arg.artifactId="@{documented.artifactId}"
-				arg.sonarQualityGate="true"
-				arg.sonarLinesOfCode="true"
-				arg.sonarReliability="true"
-				arg.sonarSecurity="true"
-				arg.sonarMaintainability="true"
-			/>
-		</header>
-		<p>
-			Aggregator POM for all <core:link page="/" /> packages.
-		</p>
-		<section:nav label="Project Links">
-			<ul>
-				<li><core:link page="/">Project Home</core:link></li>
-				<li><core:link page="changelog">Changelog</core:link></li>
-				<li><ao:a href="https://search.maven.org/artifact/${ao:encodeURIComponent('@{project.groupId}')}/${ao:encodeURIComponent('@{documented.artifactId}')}">Maven Central Repository</ao:a></li>
-				<li><ao:a href="@{project.scm.url}">GitHub</ao:a></li>
-			</ul>
-		</section:nav>
-		<section:section label="Modules">
-			<ul>
-				<li><core:link book="/bom" page="/" /></li>
-				<li><core:link book="/all" page="/" /></li>
-				<li><core:link book="/autogit" page="/" /></li>
-				<li><core:link book="/changelog/taglib" page="/" /></li>
-				<li><core:link book="/core" page="/" /></li>
-				<li><core:link book="/dia" page="/" /></li>
-				<li><core:link book="/file" page="/" /></li>
-				<li><core:link book="/google-analytics" page="/" /></li>
-				<li><core:link book="/news" page="/" /></li>
-				<li><core:link book="/openfile" page="/" /></li>
-				<li><core:link book="/pagegraph" page="/" /></li>
-				<li><core:link book="/pages" page="/" /></li>
-				<li><core:link book="/parent" page="/" /></li>
-				<li><core:link book="/resources" page="/" /></li>
-				<li><core:link book="/section" page="/" /></li>
-				<li><core:link book="/tag-reference" page="/" /></li>
-				<li><core:link book="/theme-documentation" page="/" /></li>
-				<li><core:link book="/view-all" page="/" /></li>
-				<li><core:link book="/view-tree" page="/" /></li>
-				<li><core:link book="/view-what-links-here" page="/" /></li>
-			</ul>
-		</section:section>
-	</core:page>
+  <jsp:directive.page language="java" pageEncoding="UTF-8" />
+  <jsp:directive.page session="false" />
+  <core:page
+    title="@{documented.name}"
+    description="@{documented.description}"
+    datePublished="2016-10-18T19:00:00-05:00"
+    dateModified="2021-07-16T03:48:08-05:00"
+  >
+    <core:child page="changelog" />
+    <core:child book="/bom" page="/" />
+    <core:child book="/all" page="/" />
+    <core:child book="/autogit" page="/" />
+    <core:child book="/changelog/taglib" page="/" />
+    <core:child book="/core" page="/" />
+    <core:child book="/dia" page="/" />
+    <core:child book="/file" page="/" />
+    <core:child book="/google-analytics" page="/" />
+    <core:child book="/news" page="/" />
+    <core:child book="/openfile" page="/" />
+    <core:child book="/pagegraph" page="/" />
+    <core:child book="/pages" page="/" />
+    <core:child book="/parent" page="/" />
+    <core:child book="/resources" page="/" />
+    <core:child book="/section" page="/" />
+    <core:child book="/tag-reference" page="/" />
+    <core:child book="/theme-documentation" page="/" />
+    <core:child book="/view-all" page="/" />
+    <core:child book="/view-tree" page="/" />
+    <core:child book="/view-what-links-here" page="/" />
+    <header>
+      <ao:include
+        page="/ao-badges/badges.inc.jspx"
+        arg.projectStatus="current-stable"
+        arg.managementStatus="production"
+        arg.packagingStatus="active"
+        arg.semanticVersioning="2.0.0"
+        arg.license="lgpl-3.0"
+        arg.scmUrl="@{project.scm.url}"
+        arg.githubBuildWorkflow="Build"
+        arg.mavenBadge="maven-central"
+        arg.groupId="@{project.groupId}"
+        arg.artifactId="@{documented.artifactId}"
+        arg.sonarQualityGate="true"
+        arg.sonarLinesOfCode="true"
+        arg.sonarReliability="true"
+        arg.sonarSecurity="true"
+        arg.sonarMaintainability="true"
+      />
+    </header>
+    <p>
+      Aggregator POM for all <core:link page="/" /> packages.
+    </p>
+    <section:nav label="Project Links">
+      <ul>
+        <li><core:link page="/">Project Home</core:link></li>
+        <li><core:link page="changelog">Changelog</core:link></li>
+        <li><ao:a href="https://search.maven.org/artifact/${ao:encodeURIComponent('@{project.groupId}')}/${ao:encodeURIComponent('@{documented.artifactId}')}">Maven Central Repository</ao:a></li>
+        <li><ao:a href="@{project.scm.url}">GitHub</ao:a></li>
+      </ul>
+    </section:nav>
+    <section:section label="Modules">
+      <ul>
+        <li><core:link book="/bom" page="/" /></li>
+        <li><core:link book="/all" page="/" /></li>
+        <li><core:link book="/autogit" page="/" /></li>
+        <li><core:link book="/changelog/taglib" page="/" /></li>
+        <li><core:link book="/core" page="/" /></li>
+        <li><core:link book="/dia" page="/" /></li>
+        <li><core:link book="/file" page="/" /></li>
+        <li><core:link book="/google-analytics" page="/" /></li>
+        <li><core:link book="/news" page="/" /></li>
+        <li><core:link book="/openfile" page="/" /></li>
+        <li><core:link book="/pagegraph" page="/" /></li>
+        <li><core:link book="/pages" page="/" /></li>
+        <li><core:link book="/parent" page="/" /></li>
+        <li><core:link book="/resources" page="/" /></li>
+        <li><core:link book="/section" page="/" /></li>
+        <li><core:link book="/tag-reference" page="/" /></li>
+        <li><core:link book="/theme-documentation" page="/" /></li>
+        <li><core:link book="/view-all" page="/" /></li>
+        <li><core:link book="/view-tree" page="/" /></li>
+        <li><core:link book="/view-what-links-here" page="/" /></li>
+      </ul>
+    </section:section>
+  </core:page>
 </jsp:root>
