@@ -16,3 +16,6 @@
 
 # Adding Google Analytics to SemanticCMS pages
 406f4967695466f6ebc01c9da1932a6c3fdd333b
+
+# Performed automatic source code clean-up with rewrite-maven-plugin
+d33376e5af765eeb1609e29434463d83bbc874b2
