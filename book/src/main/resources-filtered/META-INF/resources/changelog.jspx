@@ -37,7 +37,7 @@ along with semanticcms.  If not, see <https://www.gnu.org/licenses/>.
     shortTitle="Changelog"
     tocLevels="1"
     datePublished="2016-11-06T02:50:50-06:00"
-    dateModified="2022-05-12T21:05:20-05:00"
+    dateModified="2022-05-12T22:36:37-05:00"
   >
     <!-- TODO: Create a new module for icons:
       https://stackoverflow.com/questions/2997437/what-size-should-apple-touch-icon-png-be-for-ipad-and-iphone,
@@ -68,21 +68,6 @@ along with semanticcms.  If not, see <https://www.gnu.org/licenses/>.
             The previous mitigation was applied too broadly and broke the search URLs for projects with modules.
           </li>
           <li>Reduced size of Javadoc top section and fixed scroll position in Java 11.</li>
-          <li>
-            <p>
-              Enabled <ao:a href="https://docs.openrewrite.org/">OpenRewrite</ao:a> on all builds using
-              <ao:a href="https://docs.openrewrite.org/reference/rewrite-maven-plugin">OpenRewrite Maven Plugin</ao:a>.
-            </p>
-            <p>
-              A rewrite of sources is performed during process-sources phase when the <code>development</code> profile
-              is active.  Otherwise, a dry run is performed during verify phase.
-            </p>
-            <p>
-              By default, builds fail in verify phase when the dry run fails.  Each project that cannot immediately be
-              rewritten should configure the plugin with
-              <code><![CDATA[&lt;failOnDryRunResults&gt;false&lt;/failOnDryRunResults&gt;]]></code>.
-            </p>
-          </li>
           <li>
             <p>
               Enabled <ao:a href="https://checkstyle.org/">Checkstyle</ao:a> on all builds using
