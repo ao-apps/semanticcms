@@ -1,8 +1,8 @@
 # [<img src="ao-logo.png" alt="AO Logo" width="35" height="40">](https://github.com/ao-apps) [SemanticCMS](https://github.com/ao-apps/semanticcms)
 
-[![project: alpha](https://semanticcms.com/ao-badges/project-current-stable.svg)](https://aoindustries.com/life-cycle#project-current-stable)
-[![management: preview](https://semanticcms.com/ao-badges/management-production.svg)](https://aoindustries.com/life-cycle#management-production)
-[![packaging: developmental](https://semanticcms.com/ao-badges/packaging-active.svg)](https://aoindustries.com/life-cycle#packaging-active)  
+[![project: alpha](https://semanticcms.com/ao-badges/project-alpha.svg)](https://aoindustries.com/life-cycle#project-alpha)
+[![management: preview](https://semanticcms.com/ao-badges/management-preview.svg)](https://aoindustries.com/life-cycle#management-preview)
+[![packaging: developmental](https://semanticcms.com/ao-badges/packaging-developmental.svg)](https://aoindustries.com/life-cycle#packaging-developmental)  
 [![semantic versioning: 2.0.0](https://semanticcms.com/ao-badges/semver-2.0.0.svg)](http://semver.org/spec/v2.0.0.html)
 [![license: LGPL v3](https://semanticcms.com/ao-badges/license-lgpl-3.0.svg)](https://www.gnu.org/licenses/lgpl-3.0)
 
