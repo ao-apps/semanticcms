@@ -34,10 +34,6 @@ along with semanticcms.  If not, see <https://www.gnu.org/licenses/>.
 
   <properties>
     <project.build.outputTimestamp>2023-02-08T21:06:04Z</project.build.outputTimestamp>
-    <!-- SonarQube -->
-    <sonar.projectKey>${project.groupId}:${project.artifactId}</sonar.projectKey>
-    <sonar.organization>ao-apps</sonar.organization>
-    <sonar.host.url>https://sonarcloud.io</sonar.host.url>
   </properties>
 
   <name>SemanticCMS</name>
