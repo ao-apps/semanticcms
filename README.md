@@ -19,7 +19,7 @@ Aggregator POM for all [SemanticCMS](https://github.com/ao-apps/semanticcms) pac
 ## Project Links
 * [Project Home](https://semanticcms.com/)
 * [Changelog](https://semanticcms.com/changelog)
-* [Maven Central Repository](https://central.sonatype.com/search?namespace=com.semanticcms&q=a%3Asemanticcms)
+* [Maven Central Repository](https://central.sonatype.com/artifact/com.semanticcms/semanticcms)
 * [GitHub](https://github.com/ao-apps/semanticcms)
 
 ## Modules
