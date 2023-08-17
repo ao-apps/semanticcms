@@ -781,7 +781,7 @@ pipeline {
               dir(projectDir) {
                 withMaven(
                   maven: maven,
-                  mavenOpts: "${(jdk == '1.8' || jdk == '11') ? mavenOpts : (mavenOpts + ' ' + mavenOptsJdk16)}",
+                  mavenOpts: "${jdk == '11' ? mavenOpts : (mavenOpts + ' ' + mavenOptsJdk16)}",
                   mavenLocalRepo: ".m2/repository-jdk-${jdk}",
                   jdk: "jdk-$jdk"
                 ) {
@@ -836,7 +836,7 @@ pipeline {
               dir(projectDir) {
                 withMaven(
                   maven: maven,
-                  mavenOpts: "${(testJdk == '1.8' || testJdk == '11') ? mavenOpts : (mavenOpts + ' ' + mavenOptsJdk16)}",
+                  mavenOpts: "${testJdk == '11' ? mavenOpts : (mavenOpts + ' ' + mavenOptsJdk16)}",
                   mavenLocalRepo: ".m2/repository-jdk-${jdk}",
                   jdk: "jdk-$testJdk"
                 ) {
@@ -932,7 +932,7 @@ void deploySteps(niceCmd, projectDir, deployJdk, maven, mavenOpts, mavenOptsJdk1
     sh moveSurefireReportsScript(deployJdk)
     withMaven(
       maven: maven,
-      mavenOpts: "${(deployJdk == '1.8' || deployJdk == '11') ? mavenOpts : (mavenOpts + ' ' + mavenOptsJdk16)}",
+      mavenOpts: "${deployJdk == '11' ? mavenOpts : (mavenOpts + ' ' + mavenOptsJdk16)}",
       mavenLocalRepo: ".m2/repository-jdk-${deployJdk}",
       jdk: "jdk-$deployJdk"
     ) {
@@ -953,7 +953,7 @@ void sonarQubeAnalysisSteps(niceCmd, projectDir, deployJdk, maven, mavenOpts, ma
     withSonarQubeEnv(installationName: 'AO SonarQube') {
       withMaven(
         maven: maven,
-        mavenOpts: "${(deployJdk == '1.8' || deployJdk == '11') ? mavenOpts : (mavenOpts + ' ' + mavenOptsJdk16)}",
+        mavenOpts: "${deployJdk == '11' ? mavenOpts : (mavenOpts + ' ' + mavenOptsJdk16)}",
         mavenLocalRepo: ".m2/repository-jdk-${deployJdk}",
         jdk: "jdk-$deployJdk"
       ) {
