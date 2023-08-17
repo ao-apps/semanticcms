@@ -30,7 +30,7 @@ along with semanticcms.  If not, see <https://www.gnu.org/licenses/>.
   </parent>
 
   <groupId>com.semanticcms</groupId><artifactId>semanticcms-book</artifactId><version>1.19.0-POST-SNAPSHOT</version>
-  <packaging>bundle</packaging>
+  <packaging>jar</packaging>
 
   <properties>
     <module.name>com.semanticcms.book</module.name>
@@ -151,6 +151,14 @@ along with semanticcms.  If not, see <https://www.gnu.org/licenses/>.
                 <Automatic-Module-Name>${module.name}</Automatic-Module-Name>
                 <Private-Package>!.</Private-Package>
               </instructions>
+            </configuration>
+          </plugin>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId><artifactId>maven-jar-plugin</artifactId>
+            <configuration>
+              <excludes>
+                <exclude>**/module-info.class</exclude>
+              </excludes>
             </configuration>
           </plugin>
         </plugins>
