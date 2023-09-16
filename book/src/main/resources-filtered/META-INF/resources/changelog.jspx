@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 semanticcms - Aggregator POM for all SemanticCMS packages.
-Copyright (C) 2016, 2017, 2019, 2020, 2021, 2022  AO Industries, Inc.
+Copyright (C) 2016, 2017, 2019, 2020, 2021, 2022, 2023  AO Industries, Inc.
     support@aoindustries.com
     7262 Bull Pen Cir
     Mobile, AL 36695
@@ -37,7 +37,7 @@ along with semanticcms.  If not, see <https://www.gnu.org/licenses/>.
     shortTitle="Changelog"
     tocLevels="1"
     datePublished="2016-11-06T02:50:50-06:00"
-    dateModified="2022-05-15T09:05:27-05:00"
+    dateModified="2023-09-16T18:59:49Z"
   >
     <!-- TODO: Create a new module for icons:
       https://stackoverflow.com/questions/2997437/what-size-should-apple-touch-icon-png-be-for-ipad-and-iphone,
@@ -60,6 +60,10 @@ along with semanticcms.  If not, see <https://www.gnu.org/licenses/>.
           <li>Now on SemanticCMS 2.</li>
           <li>New module <core:link book="/pages" page="/" />.</li>
           <li>New module <core:link book="/repository" page="/" />.</li>
+          <li>Updated version of <core:link book="/bom" page="/" />.</li>
+          <li>Updated version of <core:link book="/all" page="/" />.</li>
+          <li>Updated version of <core:link book="/core" page="/" />.</li>
+          <li>Updated version of <core:link book="/parent" page="/" />.</li>
         </ul>
       </changelog:release>
     </c:if>
