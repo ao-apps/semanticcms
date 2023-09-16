@@ -29,7 +29,7 @@ along with semanticcms.  If not, see <https://www.gnu.org/licenses/>.
     <relativePath>parent/pom.xml</relativePath>
   </parent>
 
-  <groupId>com.semanticcms</groupId><artifactId>semanticcms</artifactId><version>1.19.0-POST-SNAPSHOT</version>
+  <groupId>com.semanticcms</groupId><artifactId>semanticcms</artifactId><version>1.20.0-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <name>SemanticCMS</name>
