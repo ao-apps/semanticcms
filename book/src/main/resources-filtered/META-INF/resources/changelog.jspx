@@ -37,7 +37,7 @@ along with semanticcms.  If not, see <https://www.gnu.org/licenses/>.
     shortTitle="Changelog"
     tocLevels="1"
     datePublished="2016-11-06T02:50:50-06:00"
-    dateModified="2023-09-16T18:59:49Z"
+    dateModified="2023-09-18T03:16:04Z"
   >
     <!-- TODO: Create a new module for icons:
       https://stackoverflow.com/questions/2997437/what-size-should-apple-touch-icon-png-be-for-ipad-and-iphone,
@@ -67,7 +67,9 @@ along with semanticcms.  If not, see <https://www.gnu.org/licenses/>.
           <li>New module <core:link book="/repository" page="/" />.</li>
           <li>Updated version of <core:link book="/bom" page="/" />.</li>
           <li>Updated version of <core:link book="/all" page="/" />.</li>
+          <li>Updated version of <core:link book="/changelog/taglib" page="/" />.</li>
           <li>Updated version of <core:link book="/core" page="/" />.</li>
+          <li>Updated version of <core:link book="/news" page="/" />.</li>
           <li>Updated version of <core:link book="/parent" page="/" />.</li>
         </ul>
       </changelog:release>
