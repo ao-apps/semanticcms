@@ -29,12 +29,12 @@ along with semanticcms.  If not, see <https://www.gnu.org/licenses/>.
     <relativePath>../parent/pom.xml</relativePath>
   </parent>
 
-  <groupId>com.semanticcms</groupId><artifactId>semanticcms-book</artifactId><version>1.20.0-SNAPSHOT</version>
+  <groupId>com.semanticcms</groupId><artifactId>semanticcms-book</artifactId><version>1.20.0</version>
   <packaging>jar</packaging>
 
   <properties>
     <!-- Must be set to ${git.commit.time} for snapshots or ISO 8601 timestamp for releases. -->
-    <project.build.outputTimestamp>${git.commit.time}</project.build.outputTimestamp>
+    <project.build.outputTimestamp>2023-09-25T08:37:28Z</project.build.outputTimestamp>
     <module.name>com.semanticcms.book</module.name>
     <subproject.subpath>book/</subproject.subpath>
     <!-- These values are copied from the project being documented -->
@@ -79,7 +79,7 @@ along with semanticcms.  If not, see <https://www.gnu.org/licenses/>.
     <connection>scm:git:git://github.com/ao-apps/semanticcms.git</connection>
     <developerConnection>scm:git:git@github.com:ao-apps/semanticcms.git</developerConnection>
     <url>https://github.com/ao-apps/semanticcms</url>
-    <tag>HEAD</tag>
+    <tag>semanticcms-book-1.20.0</tag>
   </scm>
 
   <issueManagement>
