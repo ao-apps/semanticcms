@@ -37,7 +37,7 @@ along with semanticcms.  If not, see <https://www.gnu.org/licenses/>.
     shortTitle="Changelog"
     tocLevels="1"
     datePublished="2016-11-06T02:50:50-06:00"
-    dateModified="2023-09-26T19:00:16Z"
+    dateModified="2023-10-03T17:58:59Z"
   >
     <!-- TODO: Create a new module for icons:
       https://stackoverflow.com/questions/2997437/what-size-should-apple-touch-icon-png-be-for-ipad-and-iphone,
@@ -63,6 +63,7 @@ along with semanticcms.  If not, see <https://www.gnu.org/licenses/>.
       >
         <ul>
           <li>Added script support for <ao:a href="https://oss.aoapps.com/web-resources/">AO Web Resources</ao:a>.</li>
+          <li>Removed dependency on jQuery to improve mobile browser response.</li>
         </ul>
       </changelog:release>
     </c:if>
