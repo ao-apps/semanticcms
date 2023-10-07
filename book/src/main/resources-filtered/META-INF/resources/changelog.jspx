@@ -37,7 +37,7 @@ along with semanticcms.  If not, see <https://www.gnu.org/licenses/>.
     shortTitle="Changelog"
     tocLevels="1"
     datePublished="2016-11-06T02:50:50-06:00"
-    dateModified="2023-10-03T17:58:59Z"
+    dateModified="2023-10-07T03:54:47Z"
   >
     <!-- TODO: Create a new module for icons:
       https://stackoverflow.com/questions/2997437/what-size-should-apple-touch-icon-png-be-for-ipad-and-iphone,
@@ -67,6 +67,10 @@ along with semanticcms.  If not, see <https://www.gnu.org/licenses/>.
           <li>New module <core:link book="/repository" page="/" />.</li>
           <li>Added script support for <ao:a href="https://oss.aoapps.com/web-resources/">AO Web Resources</ao:a>.</li>
           <li>Removed dependency on jQuery to improve mobile browser response.</li>
+          <li>
+            Improved support for taglib serialization: marked attribute fields <code>transient</code> and calling
+            <code>init()</code> from <code>readObject(…)</code>.
+          </li>
         </ul>
       </changelog:release>
     </c:if>
