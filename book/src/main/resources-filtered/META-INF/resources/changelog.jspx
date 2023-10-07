@@ -37,7 +37,7 @@ along with semanticcms.  If not, see <https://www.gnu.org/licenses/>.
     shortTitle="Changelog"
     tocLevels="1"
     datePublished="2016-11-06T02:50:50-06:00"
-    dateModified="2023-10-07T03:54:47Z"
+    dateModified="2023-10-07T18:16:37Z"
   >
     <!-- TODO: Create a new module for icons:
       https://stackoverflow.com/questions/2997437/what-size-should-apple-touch-icon-png-be-for-ipad-and-iphone,
@@ -70,6 +70,10 @@ along with semanticcms.  If not, see <https://www.gnu.org/licenses/>.
           <li>
             Improved support for taglib serialization: marked attribute fields <code>transient</code> and calling
             <code>init()</code> from <code>readObject(…)</code>.
+          </li>
+          <li>
+            Only register servlet at <code>/robots.txt</code> when there is no existing web resource.
+            This allows sites to provide custom <code>/robots.txt</code>.
           </li>
         </ul>
       </changelog:release>
