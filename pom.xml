@@ -25,11 +25,11 @@ along with semanticcms.  If not, see <https://www.gnu.org/licenses/>.
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>com.semanticcms</groupId><artifactId>semanticcms-parent</artifactId><version>1.21.0-SNAPSHOT</version>
+    <groupId>com.semanticcms</groupId><artifactId>semanticcms-parent</artifactId><version>2.0.0-SNAPSHOT</version>
     <relativePath>parent/pom.xml</relativePath>
   </parent>
 
-  <groupId>com.semanticcms</groupId><artifactId>semanticcms</artifactId><version>1.22.0-SNAPSHOT</version>
+  <groupId>com.semanticcms</groupId><artifactId>semanticcms</artifactId><version>2.0.0-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <properties>
@@ -79,7 +79,7 @@ along with semanticcms.  If not, see <https://www.gnu.org/licenses/>.
 
   <ciManagement>
     <system>Jenkins</system>
-    <url>https://jenkins.aoindustries.com/job/ao/job/semanticcms-1.x/job/index/</url>
+    <url>https://jenkins.aoindustries.com/job/ao/job/semanticcms-2.x/job/index/</url>
   </ciManagement>
   <!-- Only one allowed in POM:
   <ciManagement>
