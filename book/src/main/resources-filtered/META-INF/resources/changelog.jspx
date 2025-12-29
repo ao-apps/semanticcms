@@ -37,7 +37,7 @@ along with semanticcms.  If not, see <https://www.gnu.org/licenses/>.
     shortTitle="Changelog"
     tocLevels="1"
     datePublished="2016-11-06T02:50:50-06:00"
-    dateModified="2025-07-02T23:05:45Z"
+    dateModified="2025-12-27T15:45:05Z"
   >
     <!-- TODO: Create a new module for icons:
       https://stackoverflow.com/questions/2997437/what-size-should-apple-touch-icon-png-be-for-ipad-and-iphone,
@@ -61,6 +61,7 @@ along with semanticcms.  If not, see <https://www.gnu.org/licenses/>.
         scmUrl="@{project.scm.url}"
       >
         <ul>
+          <li>Minimum Java version changed from 11 to 17.</li>
           <li>Added script support for <ao:a href="https://oss.aoapps.com/web-resources/">AO Web Resources</ao:a>.</li>
           <li>Removed dependency on jQuery to improve mobile browser response.</li>
           <li>
