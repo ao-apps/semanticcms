@@ -37,7 +37,7 @@ along with semanticcms.  If not, see <https://www.gnu.org/licenses/>.
     shortTitle="Changelog"
     tocLevels="1"
     datePublished="2016-11-06T02:50:50-06:00"
-    dateModified="2025-07-02T23:05:45Z"
+    dateModified="2025-12-30T07:58:25Z"
   >
     <!-- TODO: Create a new module for icons:
       https://stackoverflow.com/questions/2997437/what-size-should-apple-touch-icon-png-be-for-ipad-and-iphone,
@@ -61,6 +61,12 @@ along with semanticcms.  If not, see <https://www.gnu.org/licenses/>.
         scmUrl="@{project.scm.url}"
       >
         <ul>
+          <li>Minimum Java version changed from 11 to 17.</li>
+          <li>
+            Converted from <ao:a href="https://www.joda.org/joda-time/">Joda-Time</ao:a> to
+            <code><ao:a rel="nofollow" href="@{documented.javadoc.link.javase}java.base/java/time/package-summary.html">java.time</ao:a></code>
+            (a standard part of Java SE 8 and above).
+          </li>
           <li>Now on SemanticCMS 2.</li>
           <li>New module <core:link book="/pages" page="/" />.</li>
           <li>New module <core:link book="/repository" page="/" />.</li>
