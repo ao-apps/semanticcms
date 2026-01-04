@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 semanticcms - Aggregator POM for all SemanticCMS packages.
-Copyright (C) 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025  AO Industries, Inc.
+Copyright (C) 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026  AO Industries, Inc.
     support@aoindustries.com
     7262 Bull Pen Cir
     Mobile, AL 36695
@@ -121,10 +121,10 @@ along with semanticcms.  If not, see <https://www.gnu.org/licenses/>.
           <usedDependencies>
             <!-- JSP Only -->
             <dependency>com.aoapps:ao-taglib</dependency>
+            <dependency>jakarta.servlet.jsp.jstl:jakarta.servlet.jsp.jstl-api</dependency>
             <dependency>com.semanticcms:semanticcms-changelog-taglib</dependency>
             <dependency>com.semanticcms:semanticcms-core-taglib</dependency>
             <dependency>com.semanticcms:semanticcms-section-taglib</dependency>
-            <dependency>org.apache.taglibs:taglibs-standard-spec</dependency>
           </usedDependencies>
           <ignoredDependencies>
             <!-- No "module-info.java" in some release builds -->
@@ -136,37 +136,6 @@ along with semanticcms.  If not, see <https://www.gnu.org/licenses/>.
     </plugins>
   </build>
 
-  <profiles>
-    <profile>
-      <id>release</id>
-      <build>
-        <plugins>
-          <plugin>
-            <groupId>org.apache.felix</groupId><artifactId>maven-bundle-plugin</artifactId>
-            <configuration>
-              <instructions>
-                <!--
-                  Releases use "Automatic-Module-Name" instead of "module-info.java"
-                  since has direct dependencies that are not yet modularized.
-                -->
-                <Automatic-Module-Name>${module.name}</Automatic-Module-Name>
-                <Private-Package>!.</Private-Package>
-              </instructions>
-            </configuration>
-          </plugin>
-          <plugin>
-            <groupId>org.apache.maven.plugins</groupId><artifactId>maven-jar-plugin</artifactId>
-            <configuration>
-              <excludes>
-                <exclude>**/module-info.class</exclude>
-              </excludes>
-            </configuration>
-          </plugin>
-        </plugins>
-      </build>
-    </profile>
-  </profiles>
-
   <dependencyManagement>
     <dependencies>
       <!-- Direct -->
@@ -176,6 +145,7 @@ along with semanticcms.  If not, see <https://www.gnu.org/licenses/>.
       <dependency>
         <groupId>com.aoapps</groupId><artifactId>ao-taglib</artifactId><version>10.0.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
       </dependency>
+      <!-- jakartaee-web-profile-bom: <groupId>jakarta.servlet.jsp.jstl</groupId><artifactId>jakarta.servlet.jsp.jstl-api</artifactId> -->
       <dependency>
         <groupId>com.semanticcms</groupId><artifactId>semanticcms-changelog-taglib</artifactId><version>2.0.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
       </dependency>
@@ -185,7 +155,6 @@ along with semanticcms.  If not, see <https://www.gnu.org/licenses/>.
       <dependency>
         <groupId>com.semanticcms</groupId><artifactId>semanticcms-section-taglib</artifactId><version>2.0.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
       </dependency>
-      <!-- javaee-web-api-bom: <groupId>org.apache.taglibs</groupId><artifactId>taglibs-standard-spec</artifactId> -->
       <!-- Transitive -->
       <dependency>
         <groupId>com.aoapps</groupId><artifactId>ao-collections</artifactId><version>4.0.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
@@ -253,9 +222,9 @@ along with semanticcms.  If not, see <https://www.gnu.org/licenses/>.
       <dependency>
         <groupId>org.apache.commons</groupId><artifactId>commons-lang3</artifactId><version>3.20.0</version>
       </dependency>
-      <!-- javaee-web-api-bom: <groupId>javax.el</groupId><artifactId>javax.el-api</artifactId> -->
-      <!-- javaee-web-api-bom: <groupId>javax.servlet</groupId><artifactId>javax.servlet-api</artifactId> -->
-      <!-- javaee-web-api-bom: <groupId>javax.servlet.jsp</groupId><artifactId>javax.servlet.jsp-api</artifactId> -->
+      <!-- jakartaee-web-profile-bom: <groupId>jakarta.el</groupId><artifactId>jakarta.el-api</artifactId> -->
+      <!-- jakartaee-web-profile-bom: <groupId>jakarta.servlet</groupId><artifactId>jakarta.servlet-api</artifactId> -->
+      <!-- jakartaee-web-profile-bom: <groupId>jakarta.servlet.jsp</groupId><artifactId>jakarta.servlet.jsp-api</artifactId> -->
       <dependency>
         <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-model</artifactId><version>2.0.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
       </dependency>
@@ -275,14 +244,14 @@ along with semanticcms.  If not, see <https://www.gnu.org/licenses/>.
         <groupId>com.semanticcms</groupId><artifactId>semanticcms-section-servlet</artifactId><version>2.0.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
       </dependency>
       <!-- Runtime Direct -->
-      <!-- javaee-web-api-bom: <groupId>org.apache.taglibs</groupId><artifactId>taglibs-standard-impl</artifactId> -->
+      <!-- jakartaee-web-profile-bom: <groupId>org.glassfish.web</groupId><artifactId>jakarta.servlet.jsp.jstl</artifactId> -->
       <!-- Runtime Transitive -->
       <dependency>
         <groupId>com.aoapps</groupId><artifactId>ao-style</artifactId><version>3.0.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
       </dependency>
       <!-- Imports -->
       <dependency>
-        <groupId>com.aoapps</groupId><artifactId>javaee-web-api-bom</artifactId><version>7.0.1-POST-SNAPSHOT</version>
+        <groupId>com.aoapps</groupId><artifactId>jakartaee-web-profile-bom</artifactId><version>10.0.0-SNAPSHOT<!-- ${POST-SNAPSHOT} --></version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
@@ -298,6 +267,9 @@ along with semanticcms.  If not, see <https://www.gnu.org/licenses/>.
       <groupId>com.aoapps</groupId><artifactId>ao-taglib</artifactId>
     </dependency>
     <dependency>
+      <groupId>jakarta.servlet.jsp.jstl</groupId><artifactId>jakarta.servlet.jsp.jstl-api</artifactId>
+    </dependency>
+    <dependency>
       <groupId>com.semanticcms</groupId><artifactId>semanticcms-changelog-taglib</artifactId>
     </dependency>
     <dependency>
@@ -306,12 +278,9 @@ along with semanticcms.  If not, see <https://www.gnu.org/licenses/>.
     <dependency>
       <groupId>com.semanticcms</groupId><artifactId>semanticcms-section-taglib</artifactId>
     </dependency>
-    <dependency>
-      <groupId>org.apache.taglibs</groupId><artifactId>taglibs-standard-spec</artifactId>
-    </dependency>
     <!-- Runtime Direct -->
     <dependency>
-      <groupId>org.apache.taglibs</groupId><artifactId>taglibs-standard-impl</artifactId>
+      <groupId>org.glassfish.web</groupId><artifactId>jakarta.servlet.jsp.jstl</artifactId>
       <scope>runtime</scope>
     </dependency>
   </dependencies>
