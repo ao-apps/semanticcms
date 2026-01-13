@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 semanticcms - Aggregator POM for all SemanticCMS packages.
-Copyright (C) 2016, 2017, 2019, 2020, 2021, 2022, 2023, 2025  AO Industries, Inc.
+Copyright (C) 2016, 2017, 2019, 2020, 2021, 2022, 2023, 2025, 2026  AO Industries, Inc.
     support@aoindustries.com
     7262 Bull Pen Cir
     Mobile, AL 36695
@@ -58,8 +58,8 @@ along with semanticcms.  If not, see <https://www.gnu.org/licenses/>.
     <header>
       <ao:include
         page="/ao-badges/badges.inc.jspx"
-        arg.projectStatus="current-stable"
-        arg.managementStatus="production"
+        arg.projectStatus="old-stable"
+        arg.managementStatus="migration"
         arg.packagingStatus="active"
         arg.semanticVersioning="2.0.0"
         arg.license="lgpl-3.0"
