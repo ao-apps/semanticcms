@@ -37,7 +37,7 @@ along with semanticcms.  If not, see <https://www.gnu.org/licenses/>.
     shortTitle="Changelog"
     tocLevels="1"
     datePublished="2016-11-06T02:50:50-06:00"
-    dateModified="2025-12-30T13:42:11Z"
+    dateModified="2026-02-03T10:03:56Z"
   >
     <!-- TODO: Create a new module for icons:
       https://stackoverflow.com/questions/2997437/what-size-should-apple-touch-icon-png-be-for-ipad-and-iphone,
@@ -47,7 +47,7 @@ along with semanticcms.  If not, see <https://www.gnu.org/licenses/>.
     <!-- TODO:
       New view for recently changed.
     -->
-    <c:set var="latestRelease" value="1.20.0" />
+    <c:set var="latestRelease" value="1.22.0" />
     <c:if test="${
       fn:endsWith('@{project.version}', '-SNAPSHOT')
       and !fn:endsWith('@{project.version}', '-POST-SNAPSHOT')
@@ -68,24 +68,36 @@ along with semanticcms.  If not, see <https://www.gnu.org/licenses/>.
             <code><ao:a rel="nofollow" href="@{documented.javadoc.link.javase}java.base/java/time/package-summary.html">java.time</ao:a></code>
             (a standard part of Java SE 8 and above).
           </li>
-          <li>Added script support for <ao:a href="https://oss.aoapps.com/web-resources/">AO Web Resources</ao:a>.</li>
-          <li>Removed dependency on jQuery to improve mobile browser response.</li>
-          <li>
-            Improved support for taglib serialization: marked attribute fields <code>transient</code> and calling
-            <code>init()</code> from <code>readObject(…)</code>.
-          </li>
-          <li>
-            Only register servlet at <code>/robots.txt</code> when there is no existing web resource.
-            This allows sites to provide custom <code>/robots.txt</code>.
-          </li>
-          <li>
-            Sonatype's <ao:a href="https://central.sonatype.org/pages/ossrh-eol/">OSSRH service has been discontinued</ao:a>.
-            Open-source components are now deployed to <ao:a href="https://central.sonatype.com/">The Central Repository</ao:a>
-            via <ao:a href="https://central.sonatype.org/publish/publish-portal-ossrh-staging-api/">Publish OSSRH Staging API</ao:a>.
-          </li>
         </ul>
       </changelog:release>
     </c:if>
+
+    <changelog:release
+      projectName="@{documented.name}"
+      version="1.22.0"
+      datePublished="2026-02-03T10:03:56Z"
+      groupId="@{project.groupId}"
+      artifactId="@{documented.artifactId}"
+      scmUrl="@{project.scm.url}"
+    >
+      <ul>
+        <li>Added script support for <ao:a href="https://oss.aoapps.com/web-resources/">AO Web Resources</ao:a>.</li>
+        <li>Removed dependency on jQuery to improve mobile browser response.</li>
+        <li>
+          Improved support for taglib serialization: marked attribute fields <code>transient</code> and calling
+          <code>init()</code> from <code>readObject(…)</code>.
+        </li>
+        <li>
+          Only register servlet at <code>/robots.txt</code> when there is no existing web resource.
+          This allows sites to provide custom <code>/robots.txt</code>.
+        </li>
+        <li>
+          Sonatype's <ao:a href="https://central.sonatype.org/pages/ossrh-eol/">OSSRH service has been discontinued</ao:a>.
+          Open-source components are now deployed to <ao:a href="https://central.sonatype.com/">The Central Repository</ao:a>
+          via <ao:a href="https://central.sonatype.org/publish/publish-portal-ossrh-staging-api/">Publish OSSRH Staging API</ao:a>.
+        </li>
+      </ul>
+    </changelog:release>
 
     <changelog:release
       projectName="@{documented.name}"
