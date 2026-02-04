@@ -34,7 +34,7 @@ along with semanticcms.  If not, see <https://www.gnu.org/licenses/>.
     title="@{documented.name}"
     description="@{documented.description}"
     datePublished="2016-10-18T19:00:00-05:00"
-    dateModified="2025-07-02T23:05:45Z"
+    dateModified="2026-02-04T13:52:14Z"
   >
     <core:child page="changelog.jspx" />
     <core:child book="/bom" page="/index.jspx" />
@@ -58,9 +58,9 @@ along with semanticcms.  If not, see <https://www.gnu.org/licenses/>.
     <header>
       <ao:include
         page="/ao-badges/badges.inc.jspx"
-        arg.projectStatus="old-stable"
-        arg.managementStatus="migration"
-        arg.packagingStatus="active"
+        arg.projectStatus="end-of-life"
+        arg.managementStatus="cleanup"
+        arg.packagingStatus="unsupported"
         arg.semanticVersioning="2.0.0"
         arg.license="lgpl-3.0"
         arg.scmUrl="@{project.scm.url}"
