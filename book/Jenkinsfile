@@ -36,7 +36,6 @@ binding.setVariable('upstreamProjects', [
   'section/taglib', // <groupId>com.semanticcms</groupId><artifactId>semanticcms-section-taglib</artifactId>
 
   // Runtime Direct
-  // No Jenkins: <groupId>org.glassfish.web</groupId><artifactId>jakarta.servlet.jsp.jstl</artifactId>
   'core/pages-jspx', // <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-pages-jspx</artifactId>
 
   // BOM
