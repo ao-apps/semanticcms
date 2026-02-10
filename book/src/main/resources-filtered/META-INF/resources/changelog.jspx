@@ -37,7 +37,7 @@ along with semanticcms.  If not, see <https://www.gnu.org/licenses/>.
     shortTitle="Changelog"
     tocLevels="1"
     datePublished="2016-11-06T02:50:50-06:00"
-    dateModified="2026-02-03T13:12:30Z"
+    dateModified="2026-02-10T03:24:03Z"
   >
     <!-- TODO: Create a new module for icons:
       https://stackoverflow.com/questions/2997437/what-size-should-apple-touch-icon-png-be-for-ipad-and-iphone,
@@ -47,7 +47,7 @@ along with semanticcms.  If not, see <https://www.gnu.org/licenses/>.
     <!-- TODO:
       New view for recently changed.
     -->
-    <c:set var="latestRelease" value="1.22.1" />
+    <c:set var="latestRelease" value="2.0.1" />
     <c:if test="${
       fn:endsWith('@{project.version}', '-SNAPSHOT')
       and !fn:endsWith('@{project.version}', '-POST-SNAPSHOT')
@@ -59,18 +59,27 @@ along with semanticcms.  If not, see <https://www.gnu.org/licenses/>.
         groupId="@{project.groupId}"
         artifactId="@{documented.artifactId}"
         scmUrl="@{project.scm.url}"
-      >
-        <ul>
-          <li>Minimum Java version changed from 11 to 17.</li>
-          <li>Updated to <ao:a href="https://jakarta.ee/specifications/webprofile/10/">Jakarta EE Web Profile 10</ao:a> (Servlet 6.0, JSP 3.1, EL 5.0, and JSTL 3.0).</li>
-          <li>
-            Converted from <ao:a href="https://www.joda.org/joda-time/">Joda-Time</ao:a> to
-            <code><ao:a rel="nofollow" href="@{documented.javadoc.link.javase}java.base/java/time/package-summary.html">java.time</ao:a></code>
-            (a standard part of Java SE 8 and above).
-          </li>
-        </ul>
-      </changelog:release>
+      />
     </c:if>
+
+    <changelog:release
+      projectName="@{documented.name}"
+      version="2.0.1"
+      datePublished="2026-02-10T03:24:03Z"
+      groupId="@{project.groupId}"
+      artifactId="@{documented.artifactId}"
+      scmUrl="@{project.scm.url}"
+    >
+      <ul>
+        <li>Minimum Java version changed from 11 to 17.</li>
+        <li>Updated to <ao:a href="https://jakarta.ee/specifications/webprofile/10/">Jakarta EE Web Profile 10</ao:a> (Servlet 6.0, JSP 3.1, EL 5.0, and JSTL 3.0).</li>
+        <li>
+          Converted from <ao:a href="https://www.joda.org/joda-time/">Joda-Time</ao:a> to
+          <code><ao:a rel="nofollow" href="@{documented.javadoc.link.javase}java.base/java/time/package-summary.html">java.time</ao:a></code>
+          (a standard part of Java SE 8 and above).
+        </li>
+      </ul>
+    </changelog:release>
 
     <changelog:release
       projectName="@{documented.name}"
